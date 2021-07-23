@@ -3,6 +3,7 @@ import Markdown from 'react-markdown'
 import axios from "axios"
 
 export default function Home({data}) {
+  console.log(data)
   return (
     <div>
       <Head>
@@ -17,7 +18,7 @@ export default function Home({data}) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const res = await axios({method: "get", url: "https://shinergy.herokuapp.com/home"})
   const {data} = res
   if (!data) {

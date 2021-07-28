@@ -76,5 +76,6 @@ export const CardButton = styled.a`
   font-size: 22px;
   font-weight: 100;
   color: #ffffff;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 `

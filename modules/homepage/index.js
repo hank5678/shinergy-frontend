@@ -6,6 +6,7 @@ import History from "./components/History"
 import OnlyOne from "./components/OnlyOne"
 import Master from "./components/Master"
 import Ticket from "./components/Ticket"
+import Infomation from "./components/Infomation"
 import Footer from "./components/Footer"
 
 export default function Home({ data }) {
@@ -23,6 +24,7 @@ export default function Home({ data }) {
       <OnlyOne />
       <Master />
       <Ticket />
+      <Infomation />
       <Footer />
       {/* <Image src={bgImg} alt="" width="100" height="100" /> */}
     </>

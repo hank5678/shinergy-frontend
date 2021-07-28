@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { Box } from "@rebass/grid"
 export const Container = styled.section`
   box-sizing: border-box;
   padding-top: 32px;
@@ -14,13 +14,7 @@ export const Slogan = styled.p`
   letter-spacing: 0.1em;
 `
 
-export const CardList = styled.ul`
-  display: flex;
-  width: 100%;
-`
-
-export const CardItem = styled.li`
-  flex: 1;
+export const CharacterBox = styled(Box)`
   &::before {
     content: "";
     display: block;

@@ -2,11 +2,6 @@ import styled from "styled-components"
 
 export const Container = styled.section`
   position: relative;
-  display: flex;
-`
-
-export const Wrapper = styled.div`
-  flex: 1;
 `
 
 export const Slogan = styled.p`

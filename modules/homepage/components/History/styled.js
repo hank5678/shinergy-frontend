@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { color } from "styled-system"
+import { Box } from "@rebass/grid"
 import bgImg from "./bg.jpg"
+import { motion } from "framer-motion"
 
 export const Container = styled.section`
   background-image: url(${bgImg.src});
@@ -22,18 +24,7 @@ export const Slogan = styled.p`
   letter-spacing: 0.1em;
 `
 
-export const GalleryList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1060px;
-  margin: 0 auto;
-`
-
-export const GalleryItem = styled.ul`
-  width: 50%;
-  padding: 25px;
-  box-sizing: border-box;
+export const GalleryBox = styled(motion(Box))`
   &:nth-child(2n) {
     transform: translateY(32px);
   }
@@ -41,16 +32,15 @@ export const GalleryItem = styled.ul`
 
 export const ImageWrapper = styled.div`
   position: relative;
+`
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100%;
-    height: 100%;
-    ${color}
-  }
+export const ImageShadow = styled(motion.div)`
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  ${color}
 `
 
 export const ImageText = styled.p`

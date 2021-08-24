@@ -2,16 +2,18 @@ import React from "react"
 import * as Styled from "./styled"
 import Image from "next/image"
 import { Flex, Box } from "@rebass/grid"
+import img01 from "./images/01.jpg"
+import img02 from "./images/02.jpg"
 
 export default function OnlyOne() {
   return (
     <Styled.Container>
       <Flex>
         <Box width={1 / 2}>
-          <Image src="https://fakeimg.pl/680x450/" alt="" width="680" height="450" layout="responsive" />
+          <Image src={img01} alt="" width="680" height="450" layout="responsive" />
         </Box>
         <Box width={1 / 2}>
-          <Image src="https://fakeimg.pl/680x450/282828/eae0d0/" alt="" width="680" height="450" layout="responsive" />
+          <Image src={img02} alt="" width="680" height="450" layout="responsive" />
         </Box>
       </Flex>
       <Styled.Slogan>

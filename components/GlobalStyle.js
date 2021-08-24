@@ -245,7 +245,8 @@ export default createGlobalStyle`
     font-size: 16px;
   }
   body {
-    background-color: #222222;
+    background-color: #000000;
+    padding-top: 60px;
   }
 
   a {

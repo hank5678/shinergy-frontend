@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const Container = styled.section`
-  background-color: #dcbedb;
+  /* background-color: #dcbedb; */
   box-sizing: border-box;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  /* padding-top: 64px; */
+  /* padding-bottom: 64px; */
 `
 
 export const Title = styled.p`
@@ -41,6 +41,7 @@ export const CardTitle = styled.p`
 `
 
 export const CardImageWrapper = styled.div`
+  position: relative;
   margin-bottom: 12px;
 `
 

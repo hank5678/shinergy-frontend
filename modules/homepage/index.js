@@ -6,12 +6,12 @@ import History from "./components/History"
 import OnlyOne from "./components/OnlyOne"
 import Master from "./components/Master"
 import Ticket from "./components/Ticket"
-import Infomation from "./components/Infomation"
-import Footer from "./components/Footer"
+import Footer from "components/Footer"
+import { Box } from "rebass"
 
 export default function Home({ data }) {
   return (
-    <>
+    <Box bg="#222222">
       <Head>
         <title>新勝景掌中劇</title>
         <meta name="description" content={data.seo.description} />
@@ -24,9 +24,7 @@ export default function Home({ data }) {
       <OnlyOne />
       <Master />
       <Ticket />
-      <Infomation />
       <Footer />
-      {/* <Image src={bgImg} alt="" width="100" height="100" /> */}
-    </>
+    </Box>
   )
 }

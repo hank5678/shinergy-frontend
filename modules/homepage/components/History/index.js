@@ -4,6 +4,10 @@ import Image from "next/image"
 import { Flex } from "@rebass/grid"
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import img01 from "./images/01.jpg"
+import img02 from "./images/02.jpg"
+import img03 from "./images/03.jpg"
+import img04 from "./images/04.jpg"
 
 const containerVariants = {
   initial: {},
@@ -60,28 +64,28 @@ export default function History() {
         <Styled.GalleryBox width={1 / 2} padding="25px" variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#FFFFFF" variants={shadowVariants} />
-            <Image src="https://fakeimg.pl/480x320/282828/eae0d0/" alt="" width="480" height="320" layout="responsive" />
+            <Image src={img01} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#FFFFFF">白晝之夜</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
         <Styled.GalleryBox width={1 / 2} padding="25px" variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#ff006c" variants={shadowVariants} />
-            <Image src="https://fakeimg.pl/480x320/282828/eae0d0/" alt="" width="480" height="320" layout="responsive" />
+            <Image src={img02} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#ff006c">雲林國際偶戲節</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
         <Styled.GalleryBox width={1 / 2} padding="25px" variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#00c4ff" variants={shadowVariants} />
-            <Image src="https://fakeimg.pl/480x320/282828/eae0d0/" alt="" width="480" height="320" layout="responsive" />
+            <Image src={img03} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#00c4ff">桃園科技藝術節</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
         <Styled.GalleryBox width={1 / 2} padding="25px" variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#80ff00" variants={shadowVariants} />
-            <Image src="https://fakeimg.pl/480x320/282828/eae0d0/" alt="" width="480" height="320" layout="responsive" />
+            <Image src={img04} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#80ff00">台灣文化博覽會</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>

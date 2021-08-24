@@ -3,7 +3,7 @@ import bgImg from "./bg.jpg"
 
 export const Container = styled.section`
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 60px);
   background-image: url(${bgImg.src});
   background-size: cover;
   background-position: center center;

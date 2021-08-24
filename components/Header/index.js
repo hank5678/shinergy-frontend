@@ -1,5 +1,6 @@
 import React from "react"
 import * as Styled from "./styled"
+import Link from "next/link"
 
 export default function Header() {
   return (
@@ -8,14 +9,10 @@ export default function Header() {
         <Styled.Logo />
         <Styled.Menu>
           <Styled.MenuItem>
-            <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
-              伏魔英雄帖
-            </a>
+            <Link href="/">伏魔英雄帖</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
-            <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
-              週邊商品
-            </a>
+            <Link href="/merchandise">週邊商品</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
             <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
@@ -33,9 +30,7 @@ export default function Header() {
             </a>
           </Styled.MenuItem>
           <Styled.MenuItem>
-            <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
-              聯絡我們
-            </a>
+            <Link href="/contact">聯絡我們</Link>
           </Styled.MenuItem>
         </Styled.Menu>
       </Styled.PrimaryWrapper>

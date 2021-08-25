@@ -1,7 +1,8 @@
-import Head from "next/head"
 import Header from "components/Header"
 import Footer from "components/Footer"
-import { Flex, Box, Text } from "rebass"
+import Box from "components/Box"
+import Text from "components/Text"
+import Flex from "components/Flex"
 import * as Styled from "./styled"
 import Image from "next/image"
 import exampleImg from "./images/example.jpg"
@@ -14,7 +15,7 @@ const Button = ({ children }) => (
 )
 
 const Commodity = ({ name, oldPrize, newPrize }) => (
-  <Box width={1 / 4} padding="25px">
+  <Box width={[1, 1, 1 / 2, 1 / 4]} padding="25px">
     <Styled.ImageWrapper>
       <Styled.ImageShadow />
       <Image src={exampleImg} alt="" width="500" height="500" layout="responsive" />
@@ -47,11 +48,6 @@ const Commodity = ({ name, oldPrize, newPrize }) => (
 export default function Merchandise({ data }) {
   return (
     <>
-      <Head>
-        <title>新勝景掌中劇</title>
-        <meta name="description" content={data.seo.description} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <Box pt="64px" mb="32px">
         <Text fontSize="46px" color="#FFFFFF" textAlign="center" mb="32px">
@@ -60,8 +56,7 @@ export default function Merchandise({ data }) {
         <Text fontSize="24px" color="#FFFFFF" textAlign="center" mb="64px">
           只在2021年伏魔英雄帖．再現白光劍
         </Text>
-
-        <Flex flexWrap="wrap" maxWidth="1200px" margin="0 auto">
+        <Flex flexWrap="wrap" maxWidth={[0, "400px", "600px", "1200px"]} margin="0 auto">
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />

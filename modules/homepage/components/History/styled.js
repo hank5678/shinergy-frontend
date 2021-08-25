@@ -22,6 +22,12 @@ export const Slogan = styled.p`
   margin-bottom: 32px;
   font-weight: 100;
   letter-spacing: 0.1em;
+  @media ${({ theme }) => theme.device.xs} {
+    font-size: 20px;
+  }
+  @media ${({ theme }) => theme.device.sm} {
+    font-size: 32px;
+  }
 `
 
 export const GalleryBox = styled(motion(Box))`
@@ -41,6 +47,15 @@ export const ImageShadow = styled(motion.div)`
   width: 100%;
   height: 100%;
   ${color}
+  @media ${({ theme }) => theme.device.xs} {
+    top: 4px;
+    left: 4px;
+  }
+
+  @media ${({ theme }) => theme.device.sm} {
+    top: 10px;
+    left: 10px;
+  }
 `
 
 export const ImageText = styled.p`
@@ -50,4 +65,14 @@ export const ImageText = styled.p`
   font-size: 32px;
   font-weight: 700;
   ${color}
+
+  @media ${({ theme }) => theme.device.xs} {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  @media ${({ theme }) => theme.device.sm} {
+    font-size: 32px;
+    font-weight: 700;
+  }
 `

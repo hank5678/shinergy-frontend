@@ -16,28 +16,18 @@ export const Title = styled.p`
   margin-bottom: 32px;
 `
 
-export const CardList = styled.ul`
-  display: flex;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-`
-
-export const CardItem = styled.li`
-  flex: 1;
-  margin: 0 8px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  padding: 24px;
-  text-align: center;
-`
-
 export const CardTitle = styled.p`
   font-size: 24px;
   color: #222222;
   letter-spacing: 0.1em;
   text-align: center;
   margin-bottom: 24px;
+  @media ${({ theme }) => theme.device.md} {
+    font-size: 18px;
+  }
+  @media ${({ theme }) => theme.device.lg} {
+    font-size: 24px;
+  }
 `
 
 export const CardImageWrapper = styled.div`
@@ -58,11 +48,23 @@ export const CardOriginalPrice = styled.span`
   font-weight: 100;
   text-decoration: line-through;
   margin-right: 6px;
+  @media ${({ theme }) => theme.device.md} {
+    font-size: 16px;
+  }
+  @media ${({ theme }) => theme.device.lg} {
+    font-size: 20px;
+  }
 `
 export const CardSpecialPrice = styled.span`
   font-size: 28px;
   font-weight: 100;
   color: #d43e23;
+  @media ${({ theme }) => theme.device.md} {
+    font-size: 20px;
+  }
+  @media ${({ theme }) => theme.device.lg} {
+    font-size: 28px;
+  }
 `
 
 export const CardPrice = styled.span`

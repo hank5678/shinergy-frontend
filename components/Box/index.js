@@ -1,15 +1,8 @@
 import styled from "styled-components"
-import { space, color, layout, flexbox } from "styled-system"
+import { Box } from "@rebass/grid"
+import { position } from "styled-system"
+const MyBox = styled(Box)`
+  ${position}
+`
 
-const Box = styled.div(
-  {
-    boxSizing: "border-box",
-    minWidth: 0,
-  },
-  space,
-  color,
-  layout,
-  flexbox
-)
-
-export default Box
+export default MyBox

@@ -7,8 +7,8 @@ export default function Footer({ simplify }) {
   return (
     <Styled.Container>
       {!simplify && (
-        <Flex maxWidth="1200px" margin="0 auto" pt="64px" mb="32px">
-          <Box width={1 / 2} px={2}>
+        <Flex maxWidth="1200px" margin="0 auto" pt="64px" mb="32px" flexWrap="wrap">
+          <Box width={[1, 1, 1 / 2]} px="16px" mb="64px">
             <Text fontSize="20px" fontWeight="700" mb="12px">
               團體優惠
             </Text>
@@ -31,7 +31,7 @@ export default function Footer({ simplify }) {
               協辦單位：文化部文策院
             </Text>
           </Box>
-          <Box width={1 / 2} px={2}>
+          <Box width={[1, 1, 1 / 2]} px="16px">
             <Text fontSize="20px" fontWeight="700" mb="12px">
               注意事項
             </Text>
@@ -55,7 +55,7 @@ export default function Footer({ simplify }) {
       )}
 
       <Box as="footer" py="12px" bg="#222222">
-        <Box as="p" color="#FFFFFF" textAlign="center">
+        <Box as="p" color="#FFFFFF" textAlign="center" fontSize={[0, "12px", "16px"]}>
           Copyright © 2021新勝景掌中劇團 PUPPETS SHOW
         </Box>
       </Box>

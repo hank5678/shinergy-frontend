@@ -247,6 +247,9 @@ export default createGlobalStyle`
   body {
     background-color: #000000;
     padding-top: 60px;
+    @media ${({ theme }) => theme.device.xs} {
+        padding-top: 48px;
+    }
   }
 
   a {

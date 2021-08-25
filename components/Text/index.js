@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { typography, space } from "styled-system"
+import { typography, space, color, position, shadow } from "styled-system"
 
 const Text = styled.p(
   {
@@ -7,7 +7,10 @@ const Text = styled.p(
     minWidth: 0,
   },
   typography,
-  space
+  space,
+  color,
+  position,
+  shadow
 )
 
 export default Text

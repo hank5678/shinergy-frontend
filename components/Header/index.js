@@ -1,13 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import * as Styled from "./styled"
 import Link from "next/link"
 
 export default function Header() {
+  const [menuVisible, setMenuVisible] = useState(false)
+
   return (
     <Styled.Container>
       <Styled.PrimaryWrapper>
         <Styled.Logo />
-        <Styled.Menu>
+        <Styled.Menu visible={menuVisible}>
           <Styled.MenuItem>
             <Link href="/">伏魔英雄帖</Link>
           </Styled.MenuItem>
@@ -32,6 +34,11 @@ export default function Header() {
           <Styled.MenuItem>
             <Link href="/contact">聯絡我們</Link>
           </Styled.MenuItem>
+          <Styled.MenuCloseIcon
+            onClick={() => {
+              setMenuVisible(false)
+            }}
+          />
         </Styled.Menu>
       </Styled.PrimaryWrapper>
 
@@ -49,10 +56,20 @@ export default function Header() {
         <Styled.SquareBtn bg="#FFCE00" fontSize="20px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">
           立刻購票
         </Styled.SquareBtn>
-        <Styled.SquareBtn bg="#FFFFFF" fontSize="16px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+        <Styled.SquareBtn className="lang" bg="#FFFFFF" fontSize="16px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">
           EN
         </Styled.SquareBtn>
       </Styled.SecondaryWrapper>
+      <Styled.SquareBtn
+        className="menu"
+        bg="#FFFFFF"
+        fontSize="16px"
+        onClick={() => {
+          setMenuVisible(true)
+        }}
+      >
+        <Styled.MenuIcon />
+      </Styled.SquareBtn>
     </Styled.Container>
   )
 }

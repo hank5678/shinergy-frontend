@@ -19,6 +19,18 @@ export const Slogan = styled.p`
   margin-bottom: 32px;
   font-weight: 100;
   letter-spacing: 0.1em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+  padding: 0 16px;
+  @media ${({ theme }) => theme.device.xs} {
+    font-size: 16px;
+  }
+  @media ${({ theme }) => theme.device.sm} {
+    font-size: 18px;
+  }
+  @media ${({ theme }) => theme.device.md} {
+    font-size: 32px;
+  }
 `
 
 export const CharacterBox = styled(Box)`

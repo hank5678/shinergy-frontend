@@ -250,6 +250,9 @@ export default createGlobalStyle`
     @media ${({ theme }) => theme.device.xs} {
         padding-top: 48px;
     }
+    @media ${({ theme }) => theme.device.md} {
+        padding-top: 60px;
+    }
   }
 
   a {

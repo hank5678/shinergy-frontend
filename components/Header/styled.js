@@ -17,6 +17,9 @@ export const Container = styled.header`
   @media ${({ theme }) => theme.device.xs} {
     height: 48px;
   }
+  @media ${({ theme }) => theme.device.md} {
+    height: 60px;
+  }
 `
 
 export const PrimaryWrapper = styled.div`
@@ -136,6 +139,9 @@ export const SquareBtn = styled.a`
 
   @media ${({ theme }) => theme.device.xs} {
     height: 48px;
+  }
+  @media ${({ theme }) => theme.device.md} {
+    height: 60px;
   }
   &.lang {
     @media ${({ theme }) => theme.device.xs} {

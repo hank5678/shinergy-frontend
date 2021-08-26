@@ -1,11 +1,12 @@
 import styled from "styled-components"
 import { Box } from "@rebass/grid"
-import img01 from "./images/01.jpg"
-import img02 from "./images/02.jpg"
-import img03 from "./images/03.jpg"
-import img04 from "./images/04.jpg"
-import img05 from "./images/05.jpg"
-import img06 from "./images/06.jpg"
+import { motion } from "framer-motion"
+// import img01 from "./images/01.jpg"
+// import img02 from "./images/02.jpg"
+// import img03 from "./images/03.jpg"
+// import img04 from "./images/04.jpg"
+// import img05 from "./images/05.jpg"
+// import img06 from "./images/06.jpg"
 
 export const Container = styled.section`
   box-sizing: border-box;
@@ -34,14 +35,16 @@ export const Slogan = styled.p`
 `
 
 export const CharacterBox = styled(Box)`
+  position: relative;
   background-size: cover;
   background-position: center center;
+  perspective: 2000px;
   &::before {
     content: "";
     display: block;
     padding-top: 148.44%;
   }
-  &:nth-child(1) {
+  /* &:nth-child(1) {
     background-image: url(${img01.src});
   }
   &:nth-child(2) {
@@ -58,5 +61,33 @@ export const CharacterBox = styled(Box)`
   }
   &:nth-child(6) {
     background-image: url(${img06.src});
-  }
+  } */
+`
+
+export const Card = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+`
+
+export const CardBack = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top right, #333333, #666666);
+`
+
+export const CardFront = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 `

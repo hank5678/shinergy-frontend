@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import * as Styled from "./styled"
 import Link from "next/link"
+import Image from "next/image"
+import logoImg from "./logo.svg"
 
 export default function Header() {
   const [menuVisible, setMenuVisible] = useState(false)
@@ -8,7 +10,9 @@ export default function Header() {
   return (
     <Styled.Container>
       <Styled.PrimaryWrapper>
-        <Styled.Logo />
+        <Styled.Logo>
+          <Image src={logoImg} alt="" width="103" height="93" layout="responsive" />
+        </Styled.Logo>
         <Styled.Menu visible={menuVisible}>
           <Styled.MenuItem>
             <Link href="/">伏魔英雄帖</Link>

@@ -9,11 +9,49 @@ import pattern01 from "./images/pattern01.png"
 import pattern02 from "./images/pattern02.png"
 import pattern03 from "./images/pattern03.png"
 import pattern04 from "./images/pattern04.png"
+import manImg from "./images/man.png"
+import womanImg from "./images/woman.png"
+import logoImg from "./images/logo.png"
+import { IoIosArrowForward } from "react-icons/io"
 
 export default function Ticket() {
   return (
     <Styled.Container>
       <Image src={coverImg} alt="" width="2732" height="1408" layout="responsive" />
+      <Styled.Frame>
+        <Box position="absolute" top="0" left="0" width="100%" height="100%" px="150px" py="50px">
+          <Text fontSize="26px" textAlign="center" color="#d43e23" mb="32px">
+            2021/10/08 - 2021/10/10
+          </Text>
+          <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
+            西門紅樓
+          </Text>
+          <Box mb="60px">
+            <Image src={logoImg} alt="" width="800" height="200" layout="responsive" />
+          </Box>
+
+          <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
+            每日限定兩場 - 午宴 / 晚宴
+          </Text>
+          <Box width="100%" textAlign="center">
+            <Text as="span" fontSize="26px" textAlign="center" color="#FF0058" mr="50px">
+              限定早鳥發售中
+            </Text>
+            <Styled.MainButton>
+              立即搶票
+              <Box ml="56px" as="span">
+                <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
+              </Box>
+            </Styled.MainButton>
+          </Box>
+        </Box>
+        <Box position="absolute" bottom="-170px" left="-160px" width="400px">
+          <Image src={womanImg} alt="" width="400" height="545" layout="responsive" />
+        </Box>
+        <Box position="absolute" bottom="-170px" right="-160px" width="400px">
+          <Image src={manImg} alt="" width="400" height="545" layout="responsive" />
+        </Box>
+      </Styled.Frame>
       <Box pt="64px" pb="64px" bg="#dcbedb">
         <Styled.Title>早鳥與套票優惠方案</Styled.Title>
         <Flex maxWidth={[0, "320px", "600px", "1200px"]} margin="0 auto" flexWrap="wrap">

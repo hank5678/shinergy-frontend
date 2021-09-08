@@ -51,8 +51,12 @@ export const SecondaryWrapper = styled.div`
 `
 
 export const Logo = styled.div`
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  box-sizing: border-box;
+  padding: 6px;
   flex: 0 0 auto;
-
   background: #ffffff;
   align-self: flex-start;
   @media ${({ theme }) => theme.device.xs} {

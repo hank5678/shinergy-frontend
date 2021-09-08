@@ -1,8 +1,10 @@
 import styled from "styled-components"
+import frameImg from "./images/frame.svg"
 
 export const Container = styled.section`
   /* background-color: #dcbedb; */
   box-sizing: border-box;
+  background-color: #ffffff;
   /* padding-top: 64px; */
   /* padding-bottom: 64px; */
 `
@@ -81,4 +83,33 @@ export const CardButton = styled.a`
   color: #ffffff;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+`
+
+export const MainButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 36px;
+  background-color: #ff0058;
+  font-size: 22px;
+  font-weight: 100;
+  color: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+`
+
+export const Frame = styled.div`
+  position: relative;
+  width: 100%;
+  margin: 32px auto 64px auto;
+  max-width: 1200px;
+  background-image: url(${frameImg.src});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 60%;
+  }
 `

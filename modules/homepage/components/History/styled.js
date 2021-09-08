@@ -5,17 +5,28 @@ import bgImg from "./bg.jpg"
 import { motion } from "framer-motion"
 
 export const Container = styled.section`
+  position: relative;
   background-image: url(${bgImg.src});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-sizing: border-box;
-  padding-top: 32px;
+  padding-top: 64px;
   padding-bottom: 64px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 `
 
 export const Slogan = styled.p`
+  position: relative;
   font-size: 32px;
   text-align: center;
   color: #ffffff;

@@ -11,10 +11,12 @@ import { motion } from "framer-motion"
 export const Container = styled.section`
   box-sizing: border-box;
   padding-top: 32px;
+  padding-bottom: 64px;
+  background-color: #222222;
 `
 
 export const Slogan = styled.p`
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   color: #ffffff;
   margin-bottom: 32px;
@@ -30,7 +32,7 @@ export const Slogan = styled.p`
     font-size: 18px;
   }
   @media ${({ theme }) => theme.device.md} {
-    font-size: 32px;
+    font-size: 24px;
   }
 `
 

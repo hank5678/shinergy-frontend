@@ -10,6 +10,7 @@ import img06 from "./images/06.jpg"
 import Image from "next/image"
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import Text from "components/Text"
 
 const containerVariants = {
   initial: {},
@@ -50,6 +51,9 @@ export default function Character() {
   const { ref, entry } = useInView({ threshold: 0.5, triggerOnce: true })
   return (
     <Styled.Container ref={ref}>
+      <Text fontSize="32px" color="#FFFFFF" mb="20px" textAlign="center">
+        各團英雄組隊打BOSS
+      </Text>
       <Styled.Slogan>紅羅剎 x 幽幻女 x 鷹爪王 x 羅燕飛 x 白袍少爺 x 六羽逍遙</Styled.Slogan>
       <MotionFlex flexWrap="wrap" variants={containerVariants} initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"}>
         <CardBox img={img01} />

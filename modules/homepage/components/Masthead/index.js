@@ -22,7 +22,18 @@ export default function Masthead() {
           <IoIosArrowDown color="#FFFFFF" fontSize="24px" />
         </Box>
       </Styled.Wrapper>
-      <Box as="a" href="http://www.google.com.tw" target="_blank" position="absolute" bottom="100px" right="0px" bg="#FF0058" px="9px" py="14px">
+      <Box
+        as="a"
+        display={["none", "none", "block"]}
+        href="http://www.google.com.tw"
+        target="_blank"
+        position="absolute"
+        bottom="100px"
+        right="0px"
+        bg="#FF0058"
+        px="9px"
+        py="14px"
+      >
         <Text fontSize="18px" color="#FFFFFF" mb="8px">
           限定早鳥發售中
         </Text>

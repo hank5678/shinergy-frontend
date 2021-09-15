@@ -21,49 +21,85 @@ export const Container = styled.div`
 `
 
 export const Bg = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  @media ${({ theme }) => theme.device.xs} {
+    display: none;
+  }
+  @media ${({ theme }) => theme.device.md} {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 `
 
 export const Wrapper = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-
-  width: 1000px;
+  width: calc(100% - 48px);
+  max-width: 1000px;
   height: auto;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px; */
+
+  @media ${({ theme }) => theme.device.xs} {
+    background-color: #ffffff;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+
+  @media ${({ theme }) => theme.device.md} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: calc(100% - 48px);
+    max-width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 `
 
 export const Frame = styled.div`
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  background-image: url(${frameImg.src});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+  @media ${({ theme }) => theme.device.xs} {
+    height: 100%;
+  }
+  @media ${({ theme }) => theme.device.md} {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    background-image: url(${frameImg.src});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 
-  &::before {
-    content: "";
-    display: block;
-    padding-top: 60%;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 60%;
+    }
   }
 `
 
 export const Content = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  padding: 48.5px 64px 10px 64px;
+  @media ${({ theme }) => theme.device.xs} {
+    height: 100%;
+  }
+  @media ${({ theme }) => theme.device.md} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 48.5px 64px 10px 64px;
+  }
 `

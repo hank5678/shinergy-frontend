@@ -220,7 +220,17 @@ export default function Master() {
       <Styled.Grid variants={gridVariants} initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"}>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img01} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img01}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[0])
+              }}
+            />
             <Styled.ImageText>陳錫煌掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -234,7 +244,17 @@ export default function Master() {
         </Styled.GridItem>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img02} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img02}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[1])
+              }}
+            />
             <Styled.ImageText>新西園掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -248,7 +268,17 @@ export default function Master() {
         </Styled.GridItem>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img03} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img03}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[2])
+              }}
+            />
             <Styled.ImageText>聲五洲掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -262,7 +292,17 @@ export default function Master() {
         </Styled.GridItem>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img04} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img04}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[3])
+              }}
+            />
             <Styled.ImageText>真吉祥掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -276,7 +316,17 @@ export default function Master() {
         </Styled.GridItem>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img05} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img05}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[4])
+              }}
+            />
             <Styled.ImageText>蕭孟然掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -290,7 +340,17 @@ export default function Master() {
         </Styled.GridItem>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img06} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img06}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[5])
+              }}
+            />
             <Styled.ImageText>彰藝園掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -304,7 +364,17 @@ export default function Master() {
         </Styled.GridItem>
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.ImageWrapper>
-            <Image src={img07} alt="" width="400" height="260" layout="responsive" />
+            <Image
+              src={img07}
+              alt=""
+              width="400"
+              height="260"
+              layout="responsive"
+              onClick={() => {
+                setModalVisible(true)
+                setModalData(data[6])
+              }}
+            />
             <Styled.ImageText>新勝景掌中劇團</Styled.ImageText>
             <Box position="absolute" bottom="0" right="0">
               <ReadMore
@@ -352,7 +422,17 @@ export default function Master() {
         <Flex maxWidth="1200px" margin="0 auto 36px auto" flexWrap="wrap">
           <Box width={[1, 1, 1 / 3]} p={[0, "12px", "12px", "24px"]}>
             <Box position="relative">
-              <Image src={img12} alt="" width="400" height="260" layout="responsive" />
+              <Image
+                src={img12}
+                alt=""
+                width="400"
+                height="260"
+                layout="responsive"
+                onClick={() => {
+                  setModalVisible(true)
+                  setModalData(data[7])
+                }}
+              />
               <Text
                 color="#FFFFFF"
                 fontSize={[0, "32px", "24px", "32px"]}
@@ -376,7 +456,17 @@ export default function Master() {
           </Box>
           <Box width={[1, 1, 1 / 3]} p={[0, "12px", "12px", "24px"]}>
             <Box position="relative">
-              <Image src={img13} alt="" width="400" height="260" layout="responsive" />
+              <Image
+                src={img13}
+                alt=""
+                width="400"
+                height="260"
+                layout="responsive"
+                onClick={() => {
+                  setModalVisible(true)
+                  setModalData(data[8])
+                }}
+              />
               <Text
                 color="#FFFFFF"
                 fontSize={[0, "32px", "24px", "32px"]}
@@ -400,7 +490,17 @@ export default function Master() {
           </Box>
           <Box width={[1, 1, 1 / 3]} p={[0, "12px", "12px", "24px"]}>
             <Box position="relative">
-              <Image src={img14} alt="" width="400" height="260" layout="responsive" />
+              <Image
+                src={img14}
+                alt=""
+                width="400"
+                height="260"
+                layout="responsive"
+                onClick={() => {
+                  setModalVisible(true)
+                  setModalData(data[9])
+                }}
+              />
               <Text
                 color="#FFFFFF"
                 fontSize={[0, "32px", "24px", "32px"]}

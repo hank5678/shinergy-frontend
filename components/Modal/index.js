@@ -19,18 +19,18 @@ export default function Modal({ visible, onClose, title, children }) {
               <Box display="flex" flexDirection="column" height="100%">
                 <Box flex="0 0 auto" width="100%" display="flex" justifyContent="space-between" alignItems="center" mb="24px">
                   <Box>
-                    <Text fontSize="36px" fontWeight="700" ml="1em">
+                    <Text fontSize={["18px", "18px", "36px"]} fontWeight="700" ml={["0px", "0px", "1em"]}>
                       {title}
                     </Text>
                   </Box>
-                  <Box>
-                    <Box mx="8px" display="inline-block">
+                  <Box display={["none", "none", "block"]}>
+                    <Box mx={["4px", "4px", "8px"]} display="inline-block">
                       <FaInstagram fontSize="20px" />
                     </Box>
-                    <Box mx="8px" display="inline-block">
+                    <Box mx={["4px", "4px", "8px"]} display="inline-block">
                       <FaFacebookSquare fontSize="20px" />
                     </Box>
-                    <Box mx="8px" display="inline-block">
+                    <Box mx={["4px", "4px", "8px"]} display="inline-block">
                       <FaYoutube fontSize="20px" />
                     </Box>
                   </Box>
@@ -41,7 +41,7 @@ export default function Modal({ visible, onClose, title, children }) {
                 </Box>
 
                 <Box flex="0 0 auto" py="12px">
-                  <Text textAlign="center" fontSize="20px" onClick={onClose} style={{ cursor: "pointer" }}>
+                  <Text textAlign="center" fontSize={["16px", "16px", "20px"]} onClick={onClose} style={{ cursor: "pointer" }}>
                     回到上頁
                   </Text>
                 </Box>

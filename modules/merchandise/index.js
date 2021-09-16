@@ -46,6 +46,7 @@ const Commodity = ({ name, oldPrize, newPrize }) => (
 )
 
 export default function Merchandise({ data }) {
+  console.log(data)
   return (
     <>
       <Header />
@@ -57,14 +58,17 @@ export default function Merchandise({ data }) {
           只在2021年伏魔英雄帖．再現白光劍
         </Text>
         <Flex flexWrap="wrap" maxWidth={[0, "400px", "600px", "1200px"]} margin="0 auto">
+          {data.map((el) => (
+            <Commodity key={el.id} name={el.name} oldPrize={el.originalPrice} newPrize={el.specialPrice} />
+          ))}
+          {/* <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
           <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
+          <Commodity name="杯墊" oldPrize="120" newPrize="99" /> */}
         </Flex>
       </Box>
       <Footer />

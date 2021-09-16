@@ -14,7 +14,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: #222222;
   }
 `
-export default function Home({ data }) {
+
+export default function Home() {
   return (
     <Box overflow="hidden">
       <GlobalStyle />

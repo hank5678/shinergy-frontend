@@ -7,14 +7,14 @@ import * as Styled from "./styled"
 import Image from "next/image"
 import exampleImg from "./images/example.jpg"
 
-const Button = ({ children }) => (
-  <Styled.Button href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+const Button = ({ children, url }) => (
+  <Styled.Button href={url} target="_blank" rel="noreferrer">
     {children}
     <Styled.ArrowIcon />
   </Styled.Button>
 )
 
-const Commodity = ({ name, oldPrize, newPrize }) => (
+const Commodity = ({ name, oldPrize, newPrize, url }) => (
   <Box width={[1, 1, 1 / 2, 1 / 4]} padding="25px">
     <Styled.ImageWrapper>
       <Styled.ImageShadow />
@@ -40,13 +40,12 @@ const Commodity = ({ name, oldPrize, newPrize }) => (
       </Text>
     </Box>
     <Box textAlign="center">
-      <Button>我要訂購</Button>
+      <Button url={url}>我要訂購</Button>
     </Box>
   </Box>
 )
 
 export default function Merchandise({ data }) {
-  console.log(data)
   return (
     <>
       <Header />
@@ -59,16 +58,8 @@ export default function Merchandise({ data }) {
         </Text>
         <Flex flexWrap="wrap" maxWidth={[0, "400px", "600px", "1200px"]} margin="0 auto">
           {data.map((el) => (
-            <Commodity key={el.id} name={el.name} oldPrize={el.originalPrice} newPrize={el.specialPrice} />
+            <Commodity key={el.id} name={el.name} oldPrize={el.originalPrice} newPrize={el.specialPrice} url={el.url} />
           ))}
-          {/* <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" />
-          <Commodity name="杯墊" oldPrize="120" newPrize="99" /> */}
         </Flex>
       </Box>
       <Footer />

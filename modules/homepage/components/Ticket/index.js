@@ -13,11 +13,13 @@ import manImg from "./images/man.png"
 import womanImg from "./images/woman.png"
 import logoImg from "./images/logo.png"
 import { IoIosArrowForward } from "react-icons/io"
+import Cover from "./components/Cover"
 
 export default function Ticket() {
   return (
     <Styled.Container>
-      <Image src={coverImg} alt="" width="2732" height="1408" layout="responsive" />
+      {/* <Image src={coverImg} alt="" width="2732" height="1408" layout="responsive" /> */}
+      <Cover />
       <Styled.Frame>
         <Box position="absolute" top="0" left="0" width="100%" height="100%" px="150px" py="50px">
           <Text fontSize="26px" textAlign="center" color="#d43e23" mb="32px">

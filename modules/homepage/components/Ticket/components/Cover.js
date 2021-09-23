@@ -13,6 +13,7 @@ import dragonTail from "../images/cover/dragon-tail.png"
 import weapon from "../images/cover/weapon.png"
 import title from "../images/cover/title.png"
 import frontBg from "../images/cover/front-bg.png"
+import backBg from "../images/cover/back-bg.png"
 import Image from "next/image"
 import Box from "components/Box"
 import { useInView } from "react-intersection-observer"
@@ -126,7 +127,19 @@ const weaponVariants = {
 }
 
 const titleVariants = {
-  initial: { opacity: 0, scale: 2 },
+  initial: { opacity: 0, scale: 1.5 },
+  inView: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      delay: delayCount(1),
+    },
+  },
+}
+
+const bgVariants = {
+  initial: { opacity: 0, scale: 1.1 },
   inView: {
     opacity: 1,
     scale: 1,
@@ -144,7 +157,9 @@ export default function Cover() {
     <Box ref={ref} position="relative">
       <Image src={bg} alt="" width="2222" height="1144" layout="responsive" />
       <Box position="absolute" top="0%" left="0" width="100%">
-        <Image src={frontBg} alt="" width="1075" height="402" layout="responsive" />
+        <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={bgVariants}>
+          <Image src={backBg} alt="" width="2222" height="1144" layout="responsive" />
+        </MotionBox>
       </Box>
 
       <Box position="absolute" top="0%" left="-10%" width="45%">

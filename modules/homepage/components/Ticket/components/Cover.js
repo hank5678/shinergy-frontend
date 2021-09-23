@@ -24,7 +24,20 @@ const MotionBox = motion(Box)
 const delayCount = (count) => 0.25 * count
 
 const characterLeft1Variants = {
-  initial: { opacity: 0, x: -100, y: 20 },
+  initial: { opacity: 0, x: -150, y: 20 },
+  inView: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: delayCount(2),
+    },
+  },
+}
+
+const dragonTailVariants = {
+  initial: { opacity: 0, x: 100, y: -20 },
   inView: {
     opacity: 1,
     x: 0,
@@ -163,7 +176,7 @@ export default function Cover() {
       </Box>
 
       <Box position="absolute" top="0%" left="-10%" width="45%">
-        <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterLeft1Variants}>
+        <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={dragonTailVariants}>
           <Image src={dragonTail} alt="" width="826" height="631" layout="responsive" />
         </MotionBox>
       </Box>

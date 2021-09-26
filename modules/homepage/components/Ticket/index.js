@@ -18,7 +18,7 @@ import Cover from "./components/Cover"
 export default function Ticket() {
   return (
     <Styled.Container>
-      {/* <Image src={coverImg} alt="" width="2732" height="1408" layout="responsive" /> */}
+      {/* <Image loading="eager" src={coverImg} alt="" width="2732" height="1408" layout="responsive" /> */}
       <Cover />
       <Styled.Frame>
         <Box position="absolute" top="0" left="0" width="100%" height="100%" px="150px" py="50px">
@@ -29,7 +29,7 @@ export default function Ticket() {
             西門紅樓
           </Text>
           <Box mb="60px">
-            <Image src={logoImg} alt="" width="800" height="200" layout="responsive" />
+            <Image loading="eager" src={logoImg} alt="" width="800" height="200" layout="responsive" />
           </Box>
 
           <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
@@ -48,10 +48,10 @@ export default function Ticket() {
           </Box>
         </Box>
         <Box position="absolute" bottom="-170px" left="-160px" width="400px">
-          <Image src={womanImg} alt="" width="400" height="545" layout="responsive" />
+          <Image loading="eager" src={womanImg} alt="" width="400" height="545" layout="responsive" />
         </Box>
         <Box position="absolute" bottom="-170px" right="-160px" width="400px">
-          <Image src={manImg} alt="" width="400" height="545" layout="responsive" />
+          <Image loading="eager" src={manImg} alt="" width="400" height="545" layout="responsive" />
         </Box>
       </Styled.Frame>
       <Box pt="64px" pb="64px" bg="#dcbedb">
@@ -61,7 +61,7 @@ export default function Ticket() {
             <Box bg="#ffffff" p="24px">
               <Styled.CardTitle>獨行俠限定價</Styled.CardTitle>
               <Styled.CardImageWrapper>
-                <Image src={pattern01} alt="" width="430" height="420" layout="responsive" />
+                <Image loading="eager" src={pattern01} alt="" width="430" height="420" layout="responsive" />
                 <Box width="100%" position="absolute" top="50%" left="50%" style={{ transform: "translate(-50%, -50%)" }}>
                   <Text fontSize="24px" fontWeight="700" mb="6px">
                     英雄席x1
@@ -86,7 +86,7 @@ export default function Ticket() {
             <Box bg="#ffffff" p="24px">
               <Styled.CardTitle>雙俠同遊限定</Styled.CardTitle>
               <Styled.CardImageWrapper>
-                <Image src={pattern02} alt="" width="430" height="420" layout="responsive" />
+                <Image loading="eager" src={pattern02} alt="" width="430" height="420" layout="responsive" />
                 <Box width="100%" position="absolute" top="50%" left="50%" style={{ transform: "translate(-50%, -50%)" }}>
                   <Text fontSize="24px" fontWeight="700" mb="6px">
                     英雄席x2
@@ -111,7 +111,7 @@ export default function Ticket() {
             <Box bg="#ffffff" p="24px">
               <Styled.CardTitle>四俠結盟限定</Styled.CardTitle>
               <Styled.CardImageWrapper>
-                <Image src={pattern03} alt="" width="430" height="420" layout="responsive" />
+                <Image loading="eager" src={pattern03} alt="" width="430" height="420" layout="responsive" />
                 <Box width="100%" position="absolute" top="50%" left="50%" style={{ transform: "translate(-50%, -50%)" }}>
                   <Text fontSize="24px" fontWeight="700" mb="6px">
                     英雄席x4
@@ -136,7 +136,7 @@ export default function Ticket() {
             <Box bg="#ffffff" p="24px">
               <Styled.CardTitle>英雄聯盟10人限定</Styled.CardTitle>
               <Styled.CardImageWrapper>
-                <Image src={pattern04} alt="" width="430" height="420" layout="responsive" />
+                <Image loading="eager" src={pattern04} alt="" width="430" height="420" layout="responsive" />
                 <Box width="100%" position="absolute" top="50%" left="50%" style={{ transform: "translate(-50%, -50%)" }}>
                   <Text fontSize="24px" fontWeight="700" mb="6px">
                     英雄席x10

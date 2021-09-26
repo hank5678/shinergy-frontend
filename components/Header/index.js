@@ -11,7 +11,7 @@ export default function Header() {
     <Styled.Container>
       <Styled.PrimaryWrapper>
         <Styled.Logo>
-          <Image src={logoImg} alt="" width="103" height="93" layout="responsive" />
+          <Image loading="eager" src={logoImg} alt="" width="103" height="93" layout="responsive" />
         </Styled.Logo>
         <Styled.Menu visible={menuVisible}>
           <Styled.MenuItem>

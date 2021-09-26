@@ -168,64 +168,64 @@ export default function Cover() {
 
   return (
     <Box ref={ref} position="relative">
-      <Image src={bg} alt="" width="2222" height="1144" layout="responsive" />
+      <Image loading="eager" src={bg} alt="" width="2222" height="1144" layout="responsive" />
       <Box position="absolute" top="0%" left="0" width="100%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={bgVariants}>
-          <Image src={backBg} alt="" width="2222" height="1144" layout="responsive" />
+          <Image loading="eager" src={backBg} alt="" width="2222" height="1144" layout="responsive" />
         </MotionBox>
       </Box>
 
       <Box position="absolute" top="0%" left="-10%" width="45%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={dragonTailVariants}>
-          <Image src={dragonTail} alt="" width="826" height="631" layout="responsive" />
+          <Image loading="eager" src={dragonTail} alt="" width="826" height="631" layout="responsive" />
         </MotionBox>
       </Box>
       <Box position="absolute" top="50%" left="50%" width="16%" style={{ transform: "translate(-50%, -50%)" }}>
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={titleVariants}>
-          <Image src={title} alt="" width="333" height="753" layout="responsive" />
+          <Image loading="eager" src={title} alt="" width="333" height="753" layout="responsive" />
         </MotionBox>
       </Box>
       <Box position="absolute" top="-5%" left="-12%" width="45%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterLeft2Variants}>
-          <Image src={characterLeft2} alt="" width="822" height="546" layout="responsive" />
+          <Image loading="eager" src={characterLeft2} alt="" width="822" height="546" layout="responsive" />
         </MotionBox>
       </Box>
       <Box position="absolute" top="43%" left="-3%" width="45%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterLeft1Variants}>
-          <Image src={characterLeft1} alt="" width="784" height="500" layout="responsive" />
+          <Image loading="eager" src={characterLeft1} alt="" width="784" height="500" layout="responsive" />
         </MotionBox>
       </Box>
 
       <Box position="absolute" top="58%" right="16%" width="38%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterRight3Variants}>
-          <Image src={characterRight3} alt="" width="832" height="485" layout="responsive" />
+          <Image loading="eager" src={characterRight3} alt="" width="832" height="485" layout="responsive" />
         </MotionBox>
       </Box>
 
       <Box position="absolute" top="15%" right="0%" width="17%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterRight5Variants}>
-          <Image src={characterRight5} alt="" width="390" height="448" layout="responsive" />
+          <Image loading="eager" src={characterRight5} alt="" width="390" height="448" layout="responsive" />
         </MotionBox>
       </Box>
       <Box position="absolute" top="20%" right="11%" width="27%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterRight4Variants}>
-          <Image src={characterRight4} alt="" width="642" height="640" layout="responsive" />
+          <Image loading="eager" src={characterRight4} alt="" width="642" height="640" layout="responsive" />
         </MotionBox>
       </Box>
       <Box position="absolute" top="48%" right="4.5%" width="20%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterRight2Variants}>
-          <Image src={characterRight2} alt="" width="428" height="600" layout="responsive" />
+          <Image loading="eager" src={characterRight2} alt="" width="428" height="600" layout="responsive" />
         </MotionBox>
       </Box>
       <Box position="absolute" bottom="0%" right="0%" width="35%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={characterRight1Variants}>
-          <Image src={characterRight1} alt="" width="784" height="500" layout="responsive" />
+          <Image loading="eager" src={characterRight1} alt="" width="784" height="500" layout="responsive" />
         </MotionBox>
       </Box>
 
       <Box position="absolute" top="39%" right="18%" width="23%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={weaponVariants}>
-          <Image src={weapon} alt="" width="536" height="285" layout="responsive" />
+          <Image loading="eager" src={weapon} alt="" width="536" height="285" layout="responsive" />
         </MotionBox>
       </Box>
     </Box>

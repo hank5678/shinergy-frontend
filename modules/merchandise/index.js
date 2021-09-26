@@ -18,7 +18,7 @@ const Commodity = ({ name, oldPrize, newPrize, url }) => (
   <Box width={[1, 1, 1 / 2, 1 / 4]} padding="25px">
     <Styled.ImageWrapper>
       <Styled.ImageShadow />
-      <Image src={exampleImg} alt="" width="500" height="500" layout="responsive" />
+      <Image loading="eager" src={exampleImg} alt="" width="500" height="500" layout="responsive" />
     </Styled.ImageWrapper>
     <Text fontSize="24px" color="#FFFFFF" textAlign="center" mt="32px" mb="24px">
       {name}

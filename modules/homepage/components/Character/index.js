@@ -41,7 +41,7 @@ const CardBox = ({ img }) => (
     <Styled.Card variants={variants}>
       <Styled.CardBack />
       <Styled.CardFront>
-        <Image src={img} alt="" width="450" height="668" layout="responsive" />
+        <Image loading="eager" src={img} alt="" width="450" height="668" layout="responsive" />
       </Styled.CardFront>
     </Styled.Card>
   </Styled.CharacterBox>

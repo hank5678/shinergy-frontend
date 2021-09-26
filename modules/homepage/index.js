@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-export default function Home() {
+const Homepage = function () {
   return (
     <Box overflow="hidden">
       <GlobalStyle />
@@ -30,3 +30,5 @@ export default function Home() {
     </Box>
   )
 }
+
+export default Homepage

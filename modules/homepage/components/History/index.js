@@ -51,28 +51,28 @@ export default function History() {
         <Styled.GalleryBox width={1 / 2} padding={["0", "12px", "25px"]} variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#FFFFFF" />
-            <Image src={img01} alt="" width="480" height="320" layout="responsive" />
+            <Image loading="eager" src={img01} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#FFFFFF">白晝之夜</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
         <Styled.GalleryBox width={1 / 2} padding={["0", "12px", "25px"]} variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#ff006c" />
-            <Image src={img02} alt="" width="480" height="320" layout="responsive" />
+            <Image loading="eager" src={img02} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#ff006c">雲林國際偶戲節</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
         <Styled.GalleryBox width={1 / 2} padding={["0", "12px", "25px"]} variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#00c4ff" />
-            <Image src={img03} alt="" width="480" height="320" layout="responsive" />
+            <Image loading="eager" src={img03} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#00c4ff">桃園科技藝術節</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
         <Styled.GalleryBox width={1 / 2} padding={["0", "12px", "25px"]} variants={variants}>
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#80ff00" />
-            <Image src={img04} alt="" width="480" height="320" layout="responsive" />
+            <Image loading="eager" src={img04} alt="" width="480" height="320" layout="responsive" />
             <Styled.ImageText color="#80ff00">台灣文化博覽會</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>

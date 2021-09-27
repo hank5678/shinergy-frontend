@@ -5,7 +5,6 @@ import Text from "components/Text"
 import Flex from "components/Flex"
 import * as Styled from "./styled"
 import Image from "next/image"
-import exampleImg from "./images/example.jpg"
 
 const Button = ({ children, url }) => (
   <Styled.Button href={url} target="_blank" rel="noreferrer">

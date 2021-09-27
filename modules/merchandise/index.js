@@ -14,11 +14,11 @@ const Button = ({ children, url }) => (
   </Styled.Button>
 )
 
-const Commodity = ({ name, oldPrize, newPrize, url }) => (
+const Commodity = ({ name, oldPrize, newPrize, url, image }) => (
   <Box width={[1, 1, 1 / 2, 1 / 4]} padding="25px">
     <Styled.ImageWrapper>
       <Styled.ImageShadow />
-      <Image loading="eager" src={exampleImg} alt="" width="500" height="500" layout="responsive" />
+      <Image loading="eager" src={`https://shinergy.herokuapp.com${image.url}`} alt="" width={image.width} height={image.height} layout="responsive" />
     </Styled.ImageWrapper>
     <Text fontSize="24px" color="#FFFFFF" textAlign="center" mt="32px" mb="24px">
       {name}
@@ -46,6 +46,7 @@ const Commodity = ({ name, oldPrize, newPrize, url }) => (
 )
 
 export default function Merchandise({ data }) {
+  console.log(data)
   return (
     <>
       <Header />
@@ -58,7 +59,7 @@ export default function Merchandise({ data }) {
         </Text>
         <Flex flexWrap="wrap" maxWidth={[0, "400px", "600px", "1200px"]} margin="0 auto">
           {data.map((el) => (
-            <Commodity key={el.id} name={el.name} oldPrize={el.originalPrice} newPrize={el.specialPrice} url={el.url} />
+            <Commodity key={el.id} name={el.name} oldPrize={el.originalPrice} newPrize={el.specialPrice} url={el.url} image={el.image} />
           ))}
         </Flex>
       </Box>

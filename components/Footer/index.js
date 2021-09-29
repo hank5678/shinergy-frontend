@@ -28,7 +28,7 @@ export default function Footer({ simplify }) {
               場地夥伴：西門紅樓
             </Text>
             <Text fontSize="17px" fontWeight="700">
-              協辦單位：文化部文策院
+              本計畫獲文化內容策進院支持
             </Text>
           </Box>
           <Box width={[1, 1, 1 / 2]} px="16px">

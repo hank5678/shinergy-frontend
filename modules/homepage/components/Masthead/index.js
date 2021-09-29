@@ -104,24 +104,13 @@ export default function Masthead() {
           <IoIosArrowDown color="#FFFFFF" fontSize="24px" />
         </Styled.ArrowWrapper>
       </Styled.Wrapper>
-      <Box
-        as="a"
-        display={["none", "none", "block"]}
-        href="http://www.google.com.tw"
-        target="_blank"
-        position="absolute"
-        bottom="100px"
-        right="0px"
-        bg="#FF0058"
-        px="9px"
-        py="14px"
-      >
+      <Box as="a" display={["none", "none", "block"]} href="#" target="_blank" position="absolute" bottom="100px" right="0px" bg="#FF0058" px="9px" py="14px">
         <Text fontSize="18px" color="#FFFFFF" mb="8px">
-          限定早鳥發售中
+          COMING SOON
         </Text>
         <Box display="flex" alignItems="center">
           <Text fontSize="26px" color="#FFFFFF">
-            立即搶票
+            11月6日開放售票
           </Text>
           <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
         </Box>

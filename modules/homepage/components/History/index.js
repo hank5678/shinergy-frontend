@@ -73,7 +73,7 @@ export default function History() {
           <Styled.ImageWrapper>
             <Styled.ImageShadow bg="#80ff00" />
             <Image loading="eager" src={img04} alt="" width="480" height="320" layout="responsive" />
-            <Styled.ImageText color="#80ff00">台灣文化博覽會</Styled.ImageText>
+            <Styled.ImageText color="#80ff00">美國巡演</Styled.ImageText>
           </Styled.ImageWrapper>
         </Styled.GalleryBox>
       </MotionFlex>

@@ -23,7 +23,7 @@ export default function Ticket() {
       <Styled.Frame>
         <Box position="absolute" top="0" left="0" width="100%" height="100%" px="150px" py="50px">
           <Text fontSize="26px" textAlign="center" color="#d43e23" mb="32px">
-            2021/10/08 - 2021/10/10
+            2021/12/31 - 2022/01/02
           </Text>
           <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
             西門紅樓
@@ -37,10 +37,10 @@ export default function Ticket() {
           </Text>
           <Box width="100%" textAlign="center">
             <Text as="span" fontSize="26px" textAlign="center" color="#FF0058" mr="50px">
-              限定早鳥發售中
+              11月6日
             </Text>
             <Styled.MainButton>
-              立即搶票
+              即將開放售票
               <Box ml="56px" as="span">
                 <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
               </Box>

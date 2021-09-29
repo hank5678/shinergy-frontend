@@ -450,7 +450,7 @@ export default function Master() {
                 fontWeight="700"
                 textShadow="0px 3px 6px #000000"
               >
-                戲偶頭製作
+                傳統戲偶頭製作體驗
               </Text>
               <Box position="absolute" bottom="0" right="0">
                 <ReadMore
@@ -485,7 +485,7 @@ export default function Master() {
                 fontWeight="700"
                 textShadow="0px 3px 6px #000000"
               >
-                金光佈景繪製
+                小佈景繪製體驗
               </Text>
               <Box position="absolute" bottom="0" right="0">
                 <ReadMore
@@ -520,7 +520,7 @@ export default function Master() {
                 fontWeight="700"
                 textShadow="0px 3px 6px #000000"
               >
-                兵器道具製作
+                布袋戲道具製作體驗
               </Text>
               <Box position="absolute" bottom="0" right="0">
                 <ReadMore

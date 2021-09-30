@@ -5,6 +5,8 @@ import Text from "components/Text"
 import Flex from "components/Flex"
 import * as Styled from "./styled"
 import Image from "next/image"
+import Modal from "components/Modal"
+import Input from "components/Input"
 
 const Button = ({ children, url }) => (
   <Styled.Button href={url} target="_blank" rel="noreferrer">
@@ -62,6 +64,29 @@ export default function Merchandise({ data }) {
           ))}
         </Flex>
       </Box>
+      {/* <Modal visible={true}>
+        <Flex>
+          <Box width={1 / 2}>11</Box>
+          <Box width={1 / 2}>
+            <Text fontSize="46px">伏魔百寶帆布袋</Text>
+            <Text fontSize="22px">
+              尺寸：8cm
+              <br />
+              顏色：紅色／彩色印刷
+              <br />
+              材質：陶瓷吸水杯墊．台灣製
+              <br />
+              使用注意：請勿使用酒精、強酸強鹼之清潔劑與易刮傷表面的器具刷洗，以免將油墨刷除掉。發現髒污越早清洗越好。
+            </Text>
+            <Text fontSize="46px">訂購資訊</Text>
+            <Input label="您的姓名*" />
+            <Input label="聯絡電話*" />
+            <Input label="您的E-mail*" />
+            <Input label="寄送地址*" />
+            <Input label="訂購數量*" />
+          </Box>
+        </Flex>
+      </Modal> */}
       <Footer />
     </>
   )

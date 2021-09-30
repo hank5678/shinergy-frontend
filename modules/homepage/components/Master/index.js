@@ -21,7 +21,7 @@ import Box from "components/Box"
 import Text from "components/Text"
 import { useInView } from "react-intersection-observer"
 
-import Modal from "components/Modal"
+import Modal from "./components/Modal"
 import photo01 from "./images/photos/01.png"
 import photo02 from "./images/photos/02.png"
 import photo03 from "./images/photos/03.png"

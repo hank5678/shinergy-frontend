@@ -2,10 +2,10 @@ import React from "react"
 import * as Styled from "./styled"
 import Text from "components/Text"
 import Box from "components/Box"
-import { FaInstagram, FaFacebookSquare, FaYoutube } from "react-icons/fa"
+import { FaInstagram, FaFacebookSquare, FaYoutube, FaGlobe } from "react-icons/fa"
 import { MdClose } from "react-icons/md"
 
-export default function Modal({ visible, onClose, title, children }) {
+export default function Modal({ visible, onClose, title, social, children }) {
   if (visible) {
     return (
       <Styled.Container>
@@ -24,15 +24,26 @@ export default function Modal({ visible, onClose, title, children }) {
                     </Text>
                   </Box>
                   <Box display={["none", "none", "block"]}>
-                    <Box mx={["4px", "4px", "8px"]} display="inline-block">
-                      <FaInstagram fontSize="20px" />
-                    </Box>
-                    <Box mx={["4px", "4px", "8px"]} display="inline-block">
-                      <FaFacebookSquare fontSize="20px" />
-                    </Box>
-                    <Box mx={["4px", "4px", "8px"]} display="inline-block">
-                      <FaYoutube fontSize="20px" />
-                    </Box>
+                    {social.ig && (
+                      <Box mx={["4px", "4px", "8px"]} display="inline-block" as="a" href={social.ig} target="_blank">
+                        <FaInstagram fontSize="20px" />
+                      </Box>
+                    )}
+                    {social.fb && (
+                      <Box mx={["4px", "4px", "8px"]} display="inline-block" as="a" href={social.fb} target="_blank">
+                        <FaFacebookSquare fontSize="20px" />
+                      </Box>
+                    )}
+                    {social.yt && (
+                      <Box mx={["4px", "4px", "8px"]} display="inline-block" as="a" href={social.yt} target="_blank">
+                        <FaYoutube fontSize="20px" />
+                      </Box>
+                    )}
+                    {social.official && (
+                      <Box mx={["4px", "4px", "8px"]} display="inline-block" as="a" href={social.official} target="_blank">
+                        <FaGlobe fontSize="20px" />
+                      </Box>
+                    )}
                   </Box>
                 </Box>
 

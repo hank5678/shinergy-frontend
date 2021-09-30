@@ -72,6 +72,12 @@ const ReadMore = ({ onClick }) => (
 const data = [
   {
     title: "陳錫煌掌中劇團 台北",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/chenhsihuangpuppet",
+      ig: "",
+      yt: "https://www.youtube.com/channel/UCA11Ve0-6y2qTy45hlWzWnQ",
+    },
     content: (
       <>
         <Image loading="eager" src={photo01} alt="" width="854" height="359" layout="responsive" />
@@ -84,6 +90,12 @@ const data = [
   },
   {
     title: "新西園掌中劇團 新北",
+    social: {
+      official: "https://cs899161.weebly.com/",
+      fb: "",
+      ig: "",
+      yt: "https://www.youtube.com/channel/UCFtJv9QnY-ICjytTOgCLRyw",
+    },
     content: (
       <>
         <Image loading="eager" src={photo04} alt="" width="854" height="359" layout="responsive" />
@@ -100,6 +112,12 @@ const data = [
   },
   {
     title: "聲五洲掌中劇團 台中",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/oscar0923353481",
+      ig: "",
+      yt: "https://www.youtube.com/user/swzpuppet",
+    },
     content: (
       <>
         {/* <Image loading="eager" src={photo02} alt="" width="854" height="359" layout="responsive" /> */}
@@ -113,6 +131,12 @@ const data = [
   },
   {
     title: "五洲真吉祥掌中劇團 新竹",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/hashtag/%E4%BA%94%E6%B4%B2%E7%9C%9F%E5%90%89%E7%A5%A5%E6%8E%8C%E4%B8%AD%E5%8A%87%E5%9C%98?source=feed_text&epa=HASHTAG",
+      ig: "",
+      yt: "",
+    },
     content: (
       <>
         <Image loading="eager" src={photo06} alt="" width="854" height="359" layout="responsive" />
@@ -125,6 +149,12 @@ const data = [
   },
   {
     title: "蕭孟然掌中劇團 台中",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/A0931983379/",
+      ig: "",
+      yt: "https://www.youtube.com/channel/UCEczmfU1FJVfH9tbe60cL-Q",
+    },
     content: (
       <>
         <Image loading="eager" src={photo08} alt="" width="854" height="359" layout="responsive" />
@@ -137,6 +167,12 @@ const data = [
   },
   {
     title: "彰藝園掌中劇團 彰化",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/%E5%BD%B0%E8%97%9D%E5%9C%92%E6%8E%8C%E4%B8%AD%E5%8A%87%E5%9C%98-103427554564379/",
+      ig: "https://www.instagram.com/cyyjjjt_1958/",
+      yt: "",
+    },
     content: (
       <>
         <Image loading="eager" src={photo02} alt="" width="854" height="359" layout="responsive" />
@@ -149,6 +185,12 @@ const data = [
   },
   {
     title: "新勝景掌中劇團",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/shinergypuppetshow/",
+      ig: "https://www.instagram.com/shinergypuppet/",
+      yt: "https://www.youtube.com/channel/UC978fGHTdoAm4kOcSwDaiiA",
+    },
     content: (
       <>
         <Image loading="eager" src={photo10} alt="" width="854" height="359" layout="responsive" />
@@ -161,6 +203,12 @@ const data = [
   },
   {
     title: "戲偶頭製作 河洛坊布袋戲",
+    social: {
+      official: "http://www.holofang.com/Default.asp",
+      fb: "https://www.facebook.com/holofang/",
+      ig: "",
+      yt: "",
+    },
     content: (
       <>
         <Image loading="eager" src={photo13} alt="" width="854" height="359" layout="responsive" />
@@ -177,6 +225,12 @@ const data = [
   },
   {
     title: "金光佈景繪製 陳明山布袋戲佈景工作室",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/%E9%99%B3%E6%98%8E%E5%B1%B1%E5%B8%83%E8%A2%8B%E6%88%B2%E4%BD%88%E6%99%AF%E5%B7%A5%E4%BD%9C%E5%AE%A4-181176831941898/",
+      ig: "",
+      yt: "",
+    },
     content: (
       <>
         <Image loading="eager" src={photo14} alt="" width="854" height="359" layout="responsive" />
@@ -195,6 +249,12 @@ const data = [
   },
   {
     title: "兵器道具製作 三昧堂",
+    social: {
+      official: "",
+      fb: "https://www.facebook.com/SamadhiTang/",
+      ig: "https://www.instagram.com/samadhitang/",
+      yt: "https://www.youtube.com/channel/UCWdBvpj0qMJYrHZGL-Fg_4w",
+    },
     content: (
       <>
         <Image loading="eager" src={photo16} alt="" width="854" height="359" layout="responsive" />
@@ -537,6 +597,7 @@ export default function Master() {
       <Modal
         visible={modalVisible}
         title={modalData.title}
+        social={modalData.social}
         onClose={() => {
           setModalVisible(false)
         }}

@@ -28,7 +28,7 @@ const Commodity = ({ name, oldPrize, newPrize, url, images, onClick }) => (
     <Styled.ImageWrapper>
       <Styled.ImageShadow />
       {/* src={`https://shinergy.herokuapp.com${images[0].url}`} */}
-      <Image loading="eager" src={`https://shinergy.herokuapp.com${images[0].url}`} alt="" width={images[0].width} height={images[0].height} layout="responsive" />
+      <Image loading="eager" src={`${images[0].url}`} alt="" width={images[0].width} height={images[0].height} layout="responsive" />
     </Styled.ImageWrapper>
     <Text fontSize="24px" color="#FFFFFF" textAlign="center" mt="32px" mb="24px">
       {name}
@@ -129,7 +129,7 @@ export default function Merchandise({ data }) {
           <Slider {...settings1} ref={sliderForRef}>
             {modalData.images.map((el, id) => (
               <div key={id}>
-                <Image loading="eager" src={`https://shinergy.herokuapp.com${el.url}`} alt="" width={el.width} height={el.height} layout="responsive" />
+                <Image loading="eager" src={`${el.url}`} alt="" width={el.width} height={el.height} layout="responsive" />
               </div>
             ))}
          
@@ -139,7 +139,7 @@ export default function Merchandise({ data }) {
           <Slider {...settings2} ref={sliderNavRef} asNavFor={sliderForRef.current}>
             {modalData.images.map((el, id) => (
               <div key={id}>
-                <Image loading="eager" src={`https://shinergy.herokuapp.com${el.url}`} alt="" width={el.width} height={el.height} layout="responsive" />
+                <Image loading="eager" src={`${el.url}`} alt="" width={el.width} height={el.height} layout="responsive" />
               </div>
             ))}
           </Slider>

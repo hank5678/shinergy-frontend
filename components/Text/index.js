@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { typography, space, color, position, shadow } from "styled-system"
+import { typography, space, color, position, shadow, system } from "styled-system"
 
 const Text = styled.p(
   {
@@ -10,7 +10,12 @@ const Text = styled.p(
   space,
   color,
   position,
-  shadow
+  shadow,
+  system({
+    whiteSpace: {
+      property: "whiteSpace"
+    }
+  })
 )
 
 export default Text

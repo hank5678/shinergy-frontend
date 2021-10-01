@@ -19,7 +19,7 @@ export const Container = styled.div`
   z-index: 1000;
   animation: ${animation} 0.25s ease-out 1;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 24px;
 `
 
 export const Bg = styled.div`
@@ -33,29 +33,35 @@ export const Bg = styled.div`
 `
 
 export const Wrapper = styled.div`
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  width: calc(100% - 48px);
-  max-width: 1000px;
-  height: auto;
-  box-sizing: border-box;
-  padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`
 
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+export const Top = styled.div`
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  /* max-width: 1000px; */
+  max-width: ${({width}) => (width)}px;
+  margin: 0 auto 6px auto;
+  text-align: right;
+`
+
+export const Content = styled.div`
+  /* flex: 1; */
+  /* flex: 0 0 auto; */
+  flex: ${({fullHeight}) => (fullHeight ? "1" : "0 0 auto")};
   position: relative;
   background-color: #ffffff;
-  width: calc(100% - 48px);
-  max-width: 1000px;
+  width: 100%;
+  /* max-width: 1000px; */
+  max-width: ${({width}) => (width)}px;
   margin: 0 auto;
   height: auto;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 30px;
   overflow: auto;
   max-height: 100%;
 `
@@ -81,4 +87,3 @@ export const Frame = styled.div`
   }
 `
 
-export const Content = styled.div``

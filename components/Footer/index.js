@@ -2,6 +2,8 @@ import React from "react"
 import Text from "components/Text"
 import * as Styled from "./styled"
 import { Flex, Box } from "@rebass/grid"
+import Image from "next/image"
+import logoImg from "./logo.png"
 
 export default function Footer({ simplify }) {
   return (
@@ -27,9 +29,16 @@ export default function Footer({ simplify }) {
             <Text fontSize="17px" fontWeight="700" mb="24px">
               場地夥伴：西門紅樓
             </Text>
-            <Text fontSize="17px" fontWeight="700">
-              本計畫獲文化內容策進院支持
-            </Text>
+            <Flex alignItems="center">
+              <Box mr="24px">
+                <Text fontSize="17px" fontWeight="700">
+                  本計畫獲文化內容策進院支持
+                </Text>
+              </Box>
+              <Box>
+                <Image loading="eager" src={logoImg} alt="" width="300" height="32" />
+              </Box>
+            </Flex>
           </Box>
           <Box width={[1, 1, 1 / 2]} px="16px">
             <Text fontSize="20px" fontWeight="700" mb="12px">

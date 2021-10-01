@@ -8,7 +8,7 @@ export const Label = styled.label`
   ${typography}
 `
 
-export const Input = styled.input`
+export const Select = styled.select`
   display: block;
   width: 100%;
   background: transparent;

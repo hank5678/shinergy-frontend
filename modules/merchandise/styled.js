@@ -22,6 +22,7 @@ export const Button = styled.a`
   font-size: 18px;
   box-sizing: border-box;
   padding: 12px 24px;
+  cursor: pointer;
 `
 
 export const ArrowIcon = styled(FaChevronRight).attrs({ size: 20 })`

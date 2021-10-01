@@ -1,21 +1,19 @@
 import React from "react"
 import * as Styled from "./styled"
-import Text from "components/Text"
-import Box from "components/Box"
-import { FaInstagram, FaFacebookSquare, FaYoutube, FaGlobe } from "react-icons/fa"
 import { MdClose } from "react-icons/md"
 
-export default function Modal({ visible, onClose, title, social, children }) {
+export default function Modal({ visible, onClose, title, social, fullHeight, width, children }) {
   if (visible) {
     return (
       <Styled.Container>
         <Styled.Bg onClick={onClose} />
         <Styled.Wrapper>
-          <Box position="absolute" top="-36px" right="0" color="#CECECE" onClick={onClose}>
-            <MdClose fontSize="28px" style={{ cursor: "pointer" }} />
-          </Box>
-
-          <Styled.Content>{children}</Styled.Content>
+          <Styled.Top width={width}>
+            <MdClose fontSize="32px" color="#FFFFFF" onClick={onClose} style={{ cursor: "pointer" }} />
+          </Styled.Top>
+          <Styled.Content width={width} fullHeight={fullHeight}>
+            {children}
+          </Styled.Content>
         </Styled.Wrapper>
       </Styled.Container>
     )

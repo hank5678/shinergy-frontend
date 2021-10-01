@@ -59,7 +59,7 @@ export default function OnlyOne() {
           <Image loading="eager" src={img01} alt="" width="680" height="450" layout="responsive" />
         </MotionBox>
         <MotionBox width={[1, 1, 1 / 2]} variants={rightBoxVariants} initial="initial" animate={entry?.isIntersecting && "inView"}>
-          <Image loading="eager" src={img02} alt="" width="680" height="450" layout="responsive" />
+          <Image loading="eager" src={img02} alt="" width="1366" height="912" layout="responsive" />
         </MotionBox>
       </Flex>
       <MotionBox

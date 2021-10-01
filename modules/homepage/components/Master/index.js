@@ -22,7 +22,7 @@ import Text from "components/Text"
 import { useInView } from "react-intersection-observer"
 
 import Modal from "./components/Modal"
-import photo01 from "./images/photos/01.png"
+import photo01 from "./images/photos/01.jpg"
 import photo02 from "./images/photos/02.png"
 import photo03 from "./images/photos/03.png"
 import photo04 from "./images/photos/04.png"
@@ -37,8 +37,11 @@ import photo12 from "./images/photos/12.png"
 import photo13 from "./images/photos/13.png"
 import photo14 from "./images/photos/14.png"
 import photo15 from "./images/photos/15.png"
-import photo16 from "./images/photos/16.png"
-import photo17 from "./images/photos/17.png"
+import photo16 from "./images/photos/16.jpg"
+import photo17 from "./images/photos/17.jpg"
+import photo18 from "./images/photos/18.jpg"
+import photo19 from "./images/photos/19.jpg"
+
 
 const gridVariants = {
   initial: {},
@@ -80,7 +83,7 @@ const data = [
     },
     content: (
       <>
-        <Image loading="eager" src={photo01} alt="" width="854" height="359" layout="responsive" />
+        <Image loading="eager" src={photo01} alt="" width="846" height="517" layout="responsive" />
         <Text fontSize="20px" lineHeight="1.6em">
           創團者陳錫煌為李天祿的長子，自小在李天祿的「亦宛然」學戲。1953年組「新宛然」布袋戲團，1970年解散，回亦宛然當二手演師。1984年與其弟李傳燦、林金鍊開始到板橋莒光國小傳授布袋戲。2007年獲中華民國資深青商總會第十四屆「全球中華文化藝術薪傳獎」。2009年成立「陳錫煌傳統掌中劇團」；同年獲國家指定頒給「重要傳統藝術保存者」證書。2010年獲臺北市傳統藝術藝師獎；2011年再獲國家指定「重要文化資產保存技術及其保存者」殊榮。
           2018年因為《紅盒子》紀錄片受到各界關注，師傅將一身技藝傳授予來自各地的藝生，其中《飛劍奇俠》為非常有代表性的經典劇目，而本次演出也將以劇情中的白光劍為主軸，透過弟子們的演出，刻畫出精彩出奇的武俠世界。
@@ -120,12 +123,12 @@ const data = [
     },
     content: (
       <>
-        {/* <Image loading="eager" src={photo02} alt="" width="854" height="359" layout="responsive" /> */}
+        <Image loading="eager" src={photo18} alt="" width="854" height="359" layout="responsive" />
         <Text fontSize="20px" lineHeight="1.6em">
           台中聲五洲掌中劇團1965年創立於台中市，由現任團長王英峻的父親王金匙所創立，曾經巡演各國足跡遍布亞洲、歐洲、美洲、澳洲，演出經驗豐富，甚至電視劇、兒童劇、現場金光戲都有所作品，發展相當多元。
           王董因為從小喜愛電視布袋戲，便自創文武生「六羽逍遙」，憑藉機智掌握先機，將對手唬的團團轉，又能在危急之時發揮畢生絕學，能文能武，如此角色，是王英峻自己心目中的偶像，在這次表演當中，王老師將擔任口白主演，讓我們一起期待在老師領銜下的精采表演!
         </Text>
-        {/* <Image loading="eager" src={photo03} alt="" width="854" height="359" layout="responsive" /> */}
+        <Image loading="eager" src={photo19} alt="" width="854" height="408" layout="responsive" />
       </>
     ),
   },
@@ -263,7 +266,7 @@ const data = [
           「三昧堂」是由一群來自不同領域的好朋友，因為對布袋戲共同的熱愛組成，成員們大多都居住在嘉義。截至2021年，已經完成了220餘件自行設計製作的精工戲偶作品。2020
           年「敦睦遠航訓練支隊台灣工藝之美展覽」，外交部與國防部挑選了三個袋戲團做為台灣布袋戲文化代表，前往帛琉展覽，分別是「新興閣掌中劇團」（傳統布袋戲）、「霹靂國際多媒體」（電視布袋戲）及「三昧堂創意木偶團隊」（精工布袋戲）。從一個業餘玩家組成的團隊，變成文化外交大使，這一路走來，有辛苦，有歡樂，更多的是對布袋戲始終不變的那股熱情。
         </Text>
-        <Image loading="eager" src={photo17} alt="" width="854" height="359" layout="responsive" />
+        <Image loading="eager" src={photo17} alt="" width="854" height="408" layout="responsive" />
       </>
     ),
   },
@@ -456,7 +459,7 @@ export default function Master() {
         <Styled.GridItem variants={gridItemVariants}>
           <Styled.SpecialTeamText>SPECIAL TEAM</Styled.SpecialTeamText>
           <Styled.SpecialTeamNameText>太日樂集</Styled.SpecialTeamNameText>
-          <Image loading="eager" src={img08} alt="" width="400" height="260" layout="responsive" />
+          <Image loading="eager" src={img08} alt="" width="533" height="300" layout="responsive" />
         </Styled.GridItem>
       </Styled.Grid>
       <Styled.BehindScene>

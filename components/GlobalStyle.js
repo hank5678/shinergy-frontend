@@ -261,4 +261,10 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
+  .slick-arrow.slick-next, .slick-arrow.slick-prev {
+    &::before {
+      color: #333;
+      /* font-size: 24px; */
+    }
+  }
 `

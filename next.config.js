@@ -2,6 +2,6 @@ module.exports = {
   reactStrictMode: true,
   optimizeFonts: false,
   images: {
-    domains: ["shinergy.herokuapp.com"],
+    domains: ["shinergy.herokuapp.com", "localhost"],
   },
 }

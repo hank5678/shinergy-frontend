@@ -58,7 +58,7 @@ export const TextArea = styled.textarea`
   overflow: hidden;
 `
 
-export const Button = styled.button`
+export const Button = styled.input.attrs({type: "submit"})`
   display: block;
   width: 100%;
   padding: 16px;

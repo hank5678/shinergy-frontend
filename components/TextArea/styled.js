@@ -8,7 +8,7 @@ export const Label = styled.label`
   ${typography}
 `
 
-export const Input = styled.input`
+export const TextArea = styled.textarea`
   display: block;
   width: 100%;
   background: transparent;
@@ -18,8 +18,11 @@ export const Input = styled.input`
   font-size: 24px;
   color: ${({color}) => (color)};
   margin-bottom: 32px;
-  padding-bottom: 16px;
+  resize: none;
+  height: 200px;
+  overflow: hidden;
 `
+
 
 export const ErrorMessage = styled.p`
   position: absolute;

@@ -1,9 +1,18 @@
 import styled from "styled-components"
 import { Box } from "@rebass/grid"
-import { position, system } from "styled-system"
+import { position, border, system } from "styled-system"
 const MyBox = styled(Box)`
   ${position}
-  ${system({ transition: true })}
+  ${border}
+  ${system({
+    transition: true,
+    outline: {
+      property: "outline",
+    },
+    cursor: {
+      property: "cursor",
+    },
+  })}
 `
 
 export default MyBox

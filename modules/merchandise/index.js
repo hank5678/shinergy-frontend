@@ -55,30 +55,13 @@ const Commodity = ({ name, oldPrize, newPrize, url, images, onClick }) => (
   </Box>
 )
 
-const settings1 = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-}
-
-const settings2 = {
-  infinite: true,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  focusOnSelect: true,
-  arrows: false,
-}
-
 export default function Merchandise({ data }) {
   const [visible, setVisible] = useState(false)
   const [successModalVisible, setSuccessModalVisible] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [currentSliderId, setCurrentSliderId] = useState(0)
   const [modalData, setModalData] = useState({ name: "", description: "", images: [] })
-  const sliderNavRef = useRef()
-  const sliderForRef = useRef()
+  const sliderRef = useRef()
   const {
     register,
     handleSubmit,
@@ -86,13 +69,28 @@ export default function Merchandise({ data }) {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => {
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    beforeChange: (current, next) => {
+      console.log(next)
+      setCurrentSliderId(next)
+    },
+  }
+
+  const onSubmit = (submitData) => {
     if (loading === false) {
       setLoading(true)
       axios({
         method: "post",
         url: "https://shinergy.herokuapp.com/merchandise-orders",
-        data,
+        data: {
+          ...submitData,
+          merchandise: modalData.name,
+        },
       }).then((res) => {
         setLoading(false)
         setVisible(false)
@@ -146,7 +144,7 @@ export default function Merchandise({ data }) {
       >
         <Flex>
           <Box width={1 / 2} padding="0 48px">
-            <Slider {...settings1} ref={sliderForRef}>
+            <Slider {...settings} ref={sliderRef}>
               {modalData.images.map((el, id) => (
                 <div key={id}>
                   <Image loading="eager" src={`${el.url}`} alt="" width={el.width} height={el.height} layout="responsive" />
@@ -154,23 +152,32 @@ export default function Merchandise({ data }) {
               ))}
             </Slider>
             {modalData.images.length >= 2 && (
-              <Slider {...settings2} ref={sliderNavRef} asNavFor={sliderForRef.current}>
+              <Flex>
                 {modalData.images.map((el, id) => (
-                  <div key={id}>
+                  <Box
+                    key={id}
+                    width={1 / modalData.images.length}
+                    cursor="pointer"
+                    outline={currentSliderId === id ? "4px solid #000000" : "none"}
+                    zIndex={currentSliderId === id ? "1" : "none"}
+                    onClick={() => {
+                      sliderRef.current.slickGoTo(id)
+                    }}
+                  >
                     <Image loading="eager" src={`${el.url}`} alt="" width={el.width} height={el.height} layout="responsive" />
-                  </div>
+                  </Box>
                 ))}
-              </Slider>
+              </Flex>
             )}
           </Box>
           <Box width={1 / 2}>
-            <Text fontSize="46px" fontWeight="700" mb="24px">
+            <Text fontSize="36px" fontWeight="700" mb="24px">
               {modalData.name}
             </Text>
-            <Text fontSize="22px" mb="48px" lineHeight="1.6em" whiteSpace="pre-line">
+            <Text fontSize="18px" mb="48px" lineHeight="1.6em" whiteSpace="pre-line">
               {modalData.description}
             </Text>
-            <Text fontSize="46px" fontWeight="700" mb="24px">
+            <Text fontSize="36px" fontWeight="700" mb="28px">
               訂購資訊
             </Text>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -185,7 +192,10 @@ export default function Merchandise({ data }) {
                 type="tel"
                 error={errors.tel}
                 id="tel"
-                {...register("tel", { required: { value: true, message: "請填寫欄位" }, maxLength: { value: 15, message: "限15字以內" } })}
+                {...register("tel", {
+                  required: { value: true, message: "請填寫欄位" },
+                  pattern: { value: /^09[\d]{8}$/, message: "格式錯誤" },
+                })}
               />
               <Input
                 label="您的E-mail*"

@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <Head>
         <title>新勝景掌中劇</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
       <GlobalStyle />

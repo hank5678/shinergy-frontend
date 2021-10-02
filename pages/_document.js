@@ -45,6 +45,11 @@ export default class MyDocument extends Document {
               `,
             }}
           />
+          <meta property="og:title" content="伏魔英雄帖再現白光劍 - 新勝景掌中劇團 光雕布袋戲" />
+          <meta property="og:description" content="首次光雕布袋戲定目劇節目，集結各家布袋戲劇團演出精華，搭配光雕舞台及現場擊樂演出!" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://shinergy.vercel.app/og.jpg" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         </Head>
         <body>
           <noscript>

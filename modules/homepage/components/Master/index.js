@@ -216,7 +216,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo13} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400">
+        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400" color="#D94727">
           課程時間 12/31(五)上午9:30-12:00 或 12/31(五)下午15:30-18:00 (相同教學內容，敬請兩場擇一)
         </Text>
         <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
@@ -241,7 +241,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo14} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400">
+        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400" color="#D94727">
           課程時間 1/1(六)上午9:30-12:00 或 1/1(六)下午15:30-18:00 (相同教學內容，敬請兩場擇一)
         </Text>
         <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
@@ -268,7 +268,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo16} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400">
+        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400" color="#D94727">
           課程時間 1/2(日)上午9:30-12:00 或 1/2(日)下午15:30-18:00 (相同教學內容，敬請兩場擇一)
         </Text>
         <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">

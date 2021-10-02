@@ -21,17 +21,17 @@ export default function Header() {
             <Link href="/merchandise">週邊商品</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
-            <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               新勝景掌中劇團
             </a>
           </Styled.MenuItem>
           <Styled.MenuItem>
-            <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               過往演出
             </a>
           </Styled.MenuItem>
           <Styled.MenuItem>
-            <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               關於我們
             </a>
           </Styled.MenuItem>
@@ -47,18 +47,18 @@ export default function Header() {
       </Styled.PrimaryWrapper>
 
       <Styled.SecondaryWrapper>
-        <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/shinergypuppet/" target="_blank" rel="noreferrer">
           <Styled.InstagramIcon />
         </a>
-        <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/shinergypuppetshow/" target="_blank" rel="noreferrer">
           <Styled.FacebookIcon />
         </a>
-        <a href="http://www.google.com.tw" target="_blank" rel="noreferrer">
+        <a href="https://www.youtube.com/channel/UC978fGHTdoAm4kOcSwDaiiA" target="_blank" rel="noreferrer">
           <Styled.YoutubeIcon />
         </a>
 
         <Styled.SquareBtn bg="#FFCE00" fontSize="20px">
-          11月6日伏魔英雄帖開放售票
+          11月6日開啓售票
         </Styled.SquareBtn>
         {/* <Styled.SquareBtn className="lang" bg="#FFFFFF" fontSize="16px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">
           EN

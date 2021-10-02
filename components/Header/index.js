@@ -22,7 +22,7 @@ export default function Header() {
           </Styled.MenuItem>
           <Styled.MenuItem>
             <a href="#" target="_blank" rel="noreferrer">
-              新勝景掌中劇團
+              最新消息
             </a>
           </Styled.MenuItem>
           <Styled.MenuItem>
@@ -32,7 +32,7 @@ export default function Header() {
           </Styled.MenuItem>
           <Styled.MenuItem>
             <a href="#" target="_blank" rel="noreferrer">
-              關於我們
+              關於新勝景
             </a>
           </Styled.MenuItem>
           <Styled.MenuItem>
@@ -58,7 +58,7 @@ export default function Header() {
         </a>
 
         <Styled.SquareBtn bg="#FFCE00" fontSize="20px">
-          11月6日開啓售票
+          11月6日伏魔英雄帖開放售票
         </Styled.SquareBtn>
         {/* <Styled.SquareBtn className="lang" bg="#FFFFFF" fontSize="16px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">
           EN

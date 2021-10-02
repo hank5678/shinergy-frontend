@@ -206,7 +206,7 @@ const data = [
     ),
   },
   {
-    title: "戲偶頭製作 河洛坊布袋戲",
+    title: "傳統戲偶頭製作體驗 河洛坊布袋戲",
     social: {
       official: "http://www.holofang.com/Default.asp",
       fb: "https://www.facebook.com/holofang/",
@@ -216,6 +216,9 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo13} alt="" width="854" height="359" layout="responsive" />
+        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400">
+          課程時間 12/31(五)上午9:30-12:00 或 12/31(五)下午15:30-18:00 (相同教學內容，敬請兩場擇一)
+        </Text>
         <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「遵循古法工藝，再現傳統細膩之美」 河洛坊的林銘文老師於2000年注入新理念，憑藉著對傳統戲曲與工藝的一股熱忱，致力於台灣傳統布袋戲藝術的傳承與創新。
           <br />
@@ -228,7 +231,7 @@ const data = [
     ),
   },
   {
-    title: "金光佈景繪製 陳明山布袋戲佈景工作室",
+    title: "小佈景繪製體驗 陳明山布袋戲佈景工作室",
     social: {
       official: "",
       fb: "https://www.facebook.com/%E9%99%B3%E6%98%8E%E5%B1%B1%E5%B8%83%E8%A2%8B%E6%88%B2%E4%BD%88%E6%99%AF%E5%B7%A5%E4%BD%9C%E5%AE%A4-181176831941898/",
@@ -238,6 +241,9 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo14} alt="" width="854" height="359" layout="responsive" />
+        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400">
+          課程時間 1/1(六)上午9:30-12:00 或 1/1(六)下午15:30-18:00 (相同教學內容，敬請兩場擇一)
+        </Text>
         <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「傳承於佈景彩繪的一代宗師，畫出掌中劇的新紀元。」
           <br />
@@ -252,7 +258,7 @@ const data = [
     ),
   },
   {
-    title: "兵器道具製作 三昧堂",
+    title: "布袋戲道具製作體驗 三昧堂",
     social: {
       official: "",
       fb: "https://www.facebook.com/SamadhiTang/",
@@ -262,6 +268,9 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo16} alt="" width="854" height="359" layout="responsive" />
+        <Text fontSize="16px" lineHeight="1.6em" my="22px" fontWeight="400">
+          課程時間 1/2(日)上午9:30-12:00 或 1/2(日)下午15:30-18:00 (相同教學內容，敬請兩場擇一)
+        </Text>
         <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「這個世界上就是有一種夥伴，你跟他們聊布袋戲可以聊到忘記去小便。」-小金老師如是說
           「三昧堂」是由一群來自不同領域的好朋友，因為對布袋戲共同的熱愛組成，成員們大多都居住在嘉義。截至2021年，已經完成了220餘件自行設計製作的精工戲偶作品。2020

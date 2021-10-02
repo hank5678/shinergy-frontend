@@ -103,6 +103,7 @@ export default function Merchandise({ data }) {
   useEffect(() => {
     if (visible) {
       reset()
+      setCurrentSliderId(0)
     }
   }, [visible, reset])
 

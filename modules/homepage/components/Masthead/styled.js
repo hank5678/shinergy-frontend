@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 export const Container = styled.section`
   position: relative;
   width: 100%;
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
+  height: 100vh;
 `
 
 export const Bg = styled(motion.div)`

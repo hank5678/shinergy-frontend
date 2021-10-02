@@ -6,7 +6,7 @@ export const Container = styled.section`
   box-sizing: border-box;
   background-color: #ffffff;
   /* padding-top: 64px; */
-  /* padding-bottom: 64px; */
+  padding-bottom: 120px;
 `
 
 export const Title = styled.p`
@@ -103,7 +103,7 @@ export const Frame = styled.div`
   margin: 32px auto 64px auto;
   max-width: 1200px;
   background-image: url(${frameImg.src});
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
 

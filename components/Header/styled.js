@@ -11,7 +11,7 @@ export const Container = styled.header`
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #222222;
+  /* background-color: #222222; */
   color: #ffffff;
   z-index: 1000;
   @media ${({ theme }) => theme.device.xs} {
@@ -57,7 +57,7 @@ export const Logo = styled.div`
   box-sizing: border-box;
   padding: 6px;
   flex: 0 0 auto;
-  background: #ffffff;
+  /* background: #ffffff; */
   align-self: flex-start;
   @media ${({ theme }) => theme.device.xs} {
     width: 80px;

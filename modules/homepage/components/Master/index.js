@@ -41,7 +41,7 @@ import photo16 from "./images/photos/16.jpg"
 import photo17 from "./images/photos/17.jpg"
 import photo18 from "./images/photos/18.jpg"
 import photo19 from "./images/photos/19.jpg"
-
+import photo20 from "./images/photos/20.png"
 
 const gridVariants = {
   initial: {},
@@ -83,11 +83,12 @@ const data = [
     },
     content: (
       <>
-        <Image loading="eager" src={photo01} alt="" width="846" height="517" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Image loading="eager" src={photo20} alt="" width="854" height="359" layout="responsive" />
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           創團者陳錫煌為李天祿的長子，自小在李天祿的「亦宛然」學戲。1953年組「新宛然」布袋戲團，1970年解散，回亦宛然當二手演師。1984年與其弟李傳燦、林金鍊開始到板橋莒光國小傳授布袋戲。2007年獲中華民國資深青商總會第十四屆「全球中華文化藝術薪傳獎」。2009年成立「陳錫煌傳統掌中劇團」；同年獲國家指定頒給「重要傳統藝術保存者」證書。2010年獲臺北市傳統藝術藝師獎；2011年再獲國家指定「重要文化資產保存技術及其保存者」殊榮。
           2018年因為《紅盒子》紀錄片受到各界關注，師傅將一身技藝傳授予來自各地的藝生，其中《飛劍奇俠》為非常有代表性的經典劇目，而本次演出也將以劇情中的白光劍為主軸，透過弟子們的演出，刻畫出精彩出奇的武俠世界。
         </Text>
+        <Image loading="eager" src={photo01} alt="" width="846" height="517" layout="responsive" />
       </>
     ),
   },
@@ -102,7 +103,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo04} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「新西園掌中劇團」出自於百年名團「小西園掌中劇團」，現任團主為許正宗老師，認識許老師的時候，是在台北大稻埕戲苑演出新西園的經典劇目《大俠鷹爪王》，而戲中讓人印象最為深刻之處，莫過於許老師走出彩樓戲台前，流利地將戲偶拋進彩樓小窗內，精準無比，這個技法稱為「跳窗」。
           <br />
           「西園班」是台灣布袋戲界著名的老招牌，而許正宗老師俐落的身手師承父親許欽以及叔父許王，都是鼎鼎大名的演師，阿宗老師集結大師技藝於一身，表演時如賦予戲偶生命，尤其在武戲上招式新奇，更有戲迷給了老師一個響亮的外號，轟動武林的「魔術手」。
@@ -124,7 +125,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo18} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           台中聲五洲掌中劇團1965年創立於台中市，由現任團長王英峻的父親王金匙所創立，曾經巡演各國足跡遍布亞洲、歐洲、美洲、澳洲，演出經驗豐富，甚至電視劇、兒童劇、現場金光戲都有所作品，發展相當多元。
           王董因為從小喜愛電視布袋戲，便自創文武生「六羽逍遙」，憑藉機智掌握先機，將對手唬的團團轉，又能在危急之時發揮畢生絕學，能文能武，如此角色，是王英峻自己心目中的偶像，在這次表演當中，王老師將擔任口白主演，讓我們一起期待在老師領銜下的精采表演!
         </Text>
@@ -143,7 +144,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo06} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           五洲真吉祥掌中劇團來自新竹，目前團主為楊志豪老師，他最拿手的正是電視木偶，精緻的操作技術加上賣力的神情，當我們站在後台看著他的表演，讓人體驗到什麼叫做人偶合一。我們拜訪志豪時，他正在位於高美濕地朝天宮演出扮仙戲，恭敬地舉起戲偶，每一個動作與身段，毫不馬虎。相處以來，我們漸漸理解志豪是一個耿直的漢子，通常他為人低調，不喜出風頭，但是遇到不義之事肯定會挺身而出，就像是他掌上講求道義的武生一般，本次表演他將擔任電視木偶劇的操偶導演，讓我們一起期待他的表現!
         </Text>
         <Image loading="eager" src={photo07} alt="" width="854" height="359" layout="responsive" />
@@ -161,7 +162,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo08} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           蕭孟然掌中木偶劇團創立於2011年，團長蕭孟然是臺中市在地布袋戲家族之第四代弟子，他從小站在戲台上，看著父親蕭寶堂演戲，耳濡目染下產生了興趣，於是他自編劇碼，開始了屬於自己的演藝生涯，這次蕭團長將帶著當家男主角”白袍少爺”參與本次的伏魔英雄表演，讓我們一起期待英雄與英雄之間擦出的火花。
         </Text>
         <Image loading="eager" src={photo09} alt="" width="854" height="359" layout="responsive" />
@@ -179,7 +180,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo02} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           成立於日據初期的「彰藝園掌中劇團」，原名祥盛天，光復後因是彰化市內唯一掌中劇團。得彰化縣政府社會科賜名「彰藝園掌中劇團」沿用至今，至今已歷經四代，目前的團主為陳韋佑先生，另外還有韋廷、韋勳兩位弟弟，三人共挑大樑，是非常有潛力的年輕輩劇團。
         </Text>
         <Image loading="eager" src={photo03} alt="" width="854" height="359" layout="responsive" />
@@ -197,7 +198,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo10} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           新勝景掌中劇團1996年創團成立於臺中豐原， 前身為朱清貴掌中劇團， 第一代團主為朱清貴先生，目前劇團由第二代團主朱勝珏接任。
         </Text>
         <Image loading="eager" src={photo11} alt="" width="854" height="359" layout="responsive" />
@@ -215,7 +216,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo13} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「遵循古法工藝，再現傳統細膩之美」 河洛坊的林銘文老師於2000年注入新理念，憑藉著對傳統戲曲與工藝的一股熱忱，致力於台灣傳統布袋戲藝術的傳承與創新。
           <br />
           戲偶作為操偶師肉體與意志的延伸，可以說是整個布袋戲的菁華，一尊尊精緻的戲偶代表著每一個角色在戲台上的生命，製作戲偶對於衣裝、髮型、帽飾無不講究，因應時代的推移，河洛坊也以兼具古典與創意的包裝設計吸引收藏者的目光，賦予偶新的意義。
@@ -237,7 +238,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo14} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「傳承於佈景彩繪的一代宗師，畫出掌中劇的新紀元。」
           <br />
           位於溪口鄉疊溪村下員林的佈景彩繪大師-陳明山；原係嘉義縣新港鄉望族，只因家族的沒落，在14歲時拜入朝陽派第三代傳人-張錦濤(耀元)門下為徒，開啟了與筆為伍的彩繪人生。
@@ -261,7 +262,7 @@ const data = [
     content: (
       <>
         <Image loading="eager" src={photo16} alt="" width="854" height="359" layout="responsive" />
-        <Text fontSize="20px" lineHeight="1.6em">
+        <Text fontSize="20px" lineHeight="1.6em" my="22px" fontWeight="300">
           「這個世界上就是有一種夥伴，你跟他們聊布袋戲可以聊到忘記去小便。」-小金老師如是說
           「三昧堂」是由一群來自不同領域的好朋友，因為對布袋戲共同的熱愛組成，成員們大多都居住在嘉義。截至2021年，已經完成了220餘件自行設計製作的精工戲偶作品。2020
           年「敦睦遠航訓練支隊台灣工藝之美展覽」，外交部與國防部挑選了三個袋戲團做為台灣布袋戲文化代表，前往帛琉展覽，分別是「新興閣掌中劇團」（傳統布袋戲）、「霹靂國際多媒體」（電視布袋戲）及「三昧堂創意木偶團隊」（精工布袋戲）。從一個業餘玩家組成的團隊，變成文化外交大使，這一路走來，有辛苦，有歡樂，更多的是對布袋戲始終不變的那股熱情。

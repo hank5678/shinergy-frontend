@@ -246,13 +246,13 @@ export default createGlobalStyle`
   }
   body {
     background-color: #000000;
-    padding-top: 60px;
+    /* padding-top: 60px;
     @media ${({ theme }) => theme.device.xs} {
         padding-top: 48px;
     }
     @media ${({ theme }) => theme.device.md} {
         padding-top: 60px;
-    }
+    } */
   }
 
   a {

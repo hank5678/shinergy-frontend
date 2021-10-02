@@ -1,12 +1,6 @@
 import styled from "styled-components"
 import { Box } from "@rebass/grid"
 import { motion } from "framer-motion"
-// import img01 from "./images/01.jpg"
-// import img02 from "./images/02.jpg"
-// import img03 from "./images/03.jpg"
-// import img04 from "./images/04.jpg"
-// import img05 from "./images/05.jpg"
-// import img06 from "./images/06.jpg"
 
 export const Container = styled.section`
   box-sizing: border-box;
@@ -46,24 +40,6 @@ export const CharacterBox = styled(Box)`
     display: block;
     padding-top: 148.44%;
   }
-  /* &:nth-child(1) {
-    background-image: url(${img01.src});
-  }
-  &:nth-child(2) {
-    background-image: url(${img02.src});
-  }
-  &:nth-child(3) {
-    background-image: url(${img03.src});
-  }
-  &:nth-child(4) {
-    background-image: url(${img04.src});
-  }
-  &:nth-child(5) {
-    background-image: url(${img05.src});
-  }
-  &:nth-child(6) {
-    background-image: url(${img06.src});
-  } */
 `
 
 export const Card = styled(motion.div)`

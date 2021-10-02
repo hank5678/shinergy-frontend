@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;500;700&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -47,8 +47,14 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJHMSB4"
-          height="0" width="0" style={{display: "none", visibility: "hidden"}}></iframe></noscript>
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-WJHMSB4"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
           <Main />
           <NextScript />
         </body>

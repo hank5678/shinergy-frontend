@@ -22,7 +22,7 @@ export default function Ticket() {
       <Cover />
       <Styled.Frame>
         <Box position="absolute" top="0" left="0" width="100%" height="100%" px="150px" py="50px">
-          <Text fontSize="26px" textAlign="center" color="#d43e23" mb="32px">
+          <Text fontSize={[0, "14px", "26px"]} textAlign="center" color="#d43e23" mb="32px">
             2021/12/31 - 2022/01/02
           </Text>
           <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
@@ -54,9 +54,7 @@ export default function Ticket() {
           <Image loading="eager" src={manImg} alt="" width="400" height="545" layout="responsive" />
         </Box>
       </Styled.Frame>
-      <!-- 先遮蔽 -->
-      {/* 
-      <Box pt="64px" pb="64px" bg="#dcbedb">
+      {/* <Box pt="64px" pb="64px" bg="#dcbedb">
         <Styled.Title>早鳥與套票優惠方案</Styled.Title>
         <Flex maxWidth={[0, "320px", "600px", "1200px"]} margin="0 auto" flexWrap="wrap">
           <Box width={[1, 1, 1 / 2, 1 / 4]} textAlign="center" p="8px">
@@ -160,8 +158,7 @@ export default function Ticket() {
             </Box>
           </Box>
         </Flex>
-      </Box>
-      */} 
+      </Box> */}
     </Styled.Container>
   )
 }

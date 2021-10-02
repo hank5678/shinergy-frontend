@@ -54,6 +54,8 @@ export default function Ticket() {
           <Image loading="eager" src={manImg} alt="" width="400" height="545" layout="responsive" />
         </Box>
       </Styled.Frame>
+      <!-- 先遮蔽 -->
+      {/* 
       <Box pt="64px" pb="64px" bg="#dcbedb">
         <Styled.Title>早鳥與套票優惠方案</Styled.Title>
         <Flex maxWidth={[0, "320px", "600px", "1200px"]} margin="0 auto" flexWrap="wrap">
@@ -159,6 +161,7 @@ export default function Ticket() {
           </Box>
         </Flex>
       </Box>
+      */} 
     </Styled.Container>
   )
 }

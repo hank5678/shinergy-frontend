@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { color, typography } from "styled-system"
+import { color, typography, layout } from "styled-system"
 import { FaInstagram, FaFacebookSquare, FaYoutube } from "react-icons/fa"
 import { MdMenu, MdClose } from "react-icons/md"
 
@@ -73,8 +73,8 @@ export const Menu = styled.ul`
   display: flex;
   width: 100%;
   margin: 0 36px;
+  /* max-width: 320px; */
   @media ${({ theme }) => theme.device.xs} {
-    /* display: none; */
     display: ${({ visible }) => (visible ? "flex" : "none")};
     flex-direction: column;
     justify-content: center;
@@ -92,16 +92,15 @@ export const Menu = styled.ul`
     width: 100%;
     height: auto;
     background-color: transparent;
-    max-width: 768px;
     justify-content: space-between;
     flex-direction: row;
-
+    max-width: 320px;
     display: flex;
-    max-width: 470px;
+    /* max-width: 470px; */
     margin: 0 24px;
   }
   @media ${({ theme }) => theme.device.lg} {
-    max-width: 768px;
+    max-width: 320px;
     margin: 0 36px;
   }
 `
@@ -138,6 +137,7 @@ export const SquareBtn = styled.a`
   display: flex;
   align-items: center;
   cursor: pointer;
+  ${layout}
   ${color}
   ${typography}
 

@@ -15,44 +15,62 @@ import logoImg from "./images/logo.png"
 import { IoIosArrowForward } from "react-icons/io"
 import Cover from "./components/Cover"
 
+import Frame from "components/Frame"
+
 export default function Ticket() {
   return (
     <Styled.Container>
       {/* <Image loading="eager" src={coverImg} alt="" width="2732" height="1408" layout="responsive" /> */}
       <Cover />
-      <Styled.Frame>
-        <Box position="absolute" top="0" left="0" width="100%" height="100%" px="150px" py="50px">
-          <Text fontSize={[0, "14px", "26px"]} textAlign="center" color="#d43e23" mb="32px">
-            2021/12/31 - 2022/01/02
-          </Text>
-          <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
-            西門紅樓
-          </Text>
-          <Box mb="60px">
-            <Image loading="eager" src={logoImg} alt="" width="600" height="304" layout="responsive" />
-          </Box>
+      {/* <Frame></Frame> */}
+      <Box maxWidth="1200px" margin="32px auto 64px auto" padding="0 27px">
+        <Frame height={[0, "128%", "90%", "45%", "45%"]}>
+          <Flex alignItems="center" height="100%">
+            <Box width="100%">
+              <Text fontSize={[0, "16px", "26px", "26px", "26px"]} textAlign="center" color="#d43e23" mb={[0, "16px", "16px", "16px", "15px"]}>
+                2021/12/31 - 2022/01/02
+              </Text>
+              <Text fontSize={[0, "24px", "40px", "40px", "40px"]} textAlign="center" color="#d43e23" mb={[0, "30px", "30px", "30px", "30px"]}>
+                西門紅樓
+              </Text>
+              <Box mb={[0, "30px", "30px", "30px", "40px"]} maxWidth={["none", "none", "none", "600px", "750px", "800px"]} margin="0 auto">
+                <Image loading="eager" src={logoImg} alt="" width="600" height="304" layout="responsive" />
+              </Box>
 
-          <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
-            每日限定兩場
-          </Text>
-          <Box width="100%" textAlign="center">
-            <Text as="span" fontSize="26px" textAlign="center" color="#FF0058" mr="50px">
-              11月6日即將開放售票
-            </Text>
-            {/*<Styled.MainButton>
+              <Text fontSize={[0, "20px", "40px", "40px", "40px"]} textAlign="center" color="#d43e23" mb={[0, "30px", "30px", "30px", "20px"]}>
+                每日限定兩場
+              </Text>
+              <Box width="100%" textAlign="center">
+                <Text as="span" fontSize={[0, "12px", "26px", "26px", "26px"]} textAlign="center" color="#FF0058">
+                  11月6日即將開放售票
+                </Text>
+                {/*<Styled.MainButton>
               <Box ml="56px" as="span">
                 <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
               </Box>
             </Styled.MainButton>*/}
+              </Box>
+            </Box>
+          </Flex>
+
+          <Box
+            position="absolute"
+            bottom={[0, "-30px", "-30px", "-100px", "-120px", "-170px"]}
+            left={[0, "-30px", "-30px", "-40px", "-80px", "-160px"]}
+            width={[0, "110px", "210px", "300px", "400px"]}
+          >
+            <Image loading="eager" src={womanImg} alt="" width="400" height="545" layout="responsive" />
           </Box>
-        </Box>
-        <Box position="absolute" bottom="-170px" left="-160px" width="400px">
-          <Image loading="eager" src={womanImg} alt="" width="400" height="545" layout="responsive" />
-        </Box>
-        <Box position="absolute" bottom="-170px" right="-160px" width="400px">
-          <Image loading="eager" src={manImg} alt="" width="400" height="545" layout="responsive" />
-        </Box>
-      </Styled.Frame>
+          <Box
+            position="absolute"
+            bottom={[0, "-30px", "-30px", "-100px", "-120px", "-170px"]}
+            right={[0, "-30px", "-30px", "-40px", "-80px", "-160px"]}
+            width={[0, "110px", "210px", "300px", "400px"]}
+          >
+            <Image loading="eager" src={manImg} alt="" width="400" height="545" layout="responsive" />
+          </Box>
+        </Frame>
+      </Box>
       {/* <Box pt="64px" pb="64px" bg="#dcbedb">
         <Styled.Title>早鳥與套票優惠方案</Styled.Title>
         <Flex maxWidth={[0, "320px", "600px", "1200px"]} margin="0 auto" flexWrap="wrap">

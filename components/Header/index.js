@@ -20,21 +20,21 @@ export default function Header() {
           <Styled.MenuItem>
             <Link href="/merchandise">週邊商品</Link>
           </Styled.MenuItem>
-          <Styled.MenuItem>
+          {/* <Styled.MenuItem>
             <a href="#" target="_blank" rel="noreferrer">
               最新消息
             </a>
-          </Styled.MenuItem>
-          <Styled.MenuItem>
+          </Styled.MenuItem> */}
+          {/* <Styled.MenuItem>
             <a href="#" target="_blank" rel="noreferrer">
               過往演出
             </a>
-          </Styled.MenuItem>
-          <Styled.MenuItem>
+          </Styled.MenuItem> */}
+          {/* <Styled.MenuItem>
             <a href="#" target="_blank" rel="noreferrer">
               關於新勝景
             </a>
-          </Styled.MenuItem>
+          </Styled.MenuItem> */}
           <Styled.MenuItem>
             <Link href="/contact">聯絡我們</Link>
           </Styled.MenuItem>
@@ -57,7 +57,7 @@ export default function Header() {
           <Styled.YoutubeIcon />
         </a>
 
-        <Styled.SquareBtn bg="#FFCE00" fontSize="20px">
+        <Styled.SquareBtn bg="#FFCE00" fontSize="20px" display={["flex", "none", "flex"]}>
           11月6日伏魔英雄帖開放售票
         </Styled.SquareBtn>
         {/* <Styled.SquareBtn className="lang" bg="#FFFFFF" fontSize="16px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">

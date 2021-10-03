@@ -49,3 +49,9 @@ export const ArrowWrapper = styled(motion.div)`
   animation: ${moving} 0.5s ease-in infinite;
   animation-direction: alternate;
 `
+
+export const Video = styled(motion.video)`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+`

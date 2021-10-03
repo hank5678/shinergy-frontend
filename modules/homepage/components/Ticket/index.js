@@ -33,18 +33,17 @@ export default function Ticket() {
           </Box>
 
           <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">
-            每日限定兩場 - 午宴 / 晚宴
+            每日限定兩場
           </Text>
           <Box width="100%" textAlign="center">
             <Text as="span" fontSize="26px" textAlign="center" color="#FF0058" mr="50px">
-              11月6日
+              11月6日即將開放售票
             </Text>
-            <Styled.MainButton>
-              即將開放售票
+            {/*<Styled.MainButton>
               <Box ml="56px" as="span">
                 <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
               </Box>
-            </Styled.MainButton>
+            </Styled.MainButton>*/}
           </Box>
         </Box>
         <Box position="absolute" bottom="-170px" left="-160px" width="400px">

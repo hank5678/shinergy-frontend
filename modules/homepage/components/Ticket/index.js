@@ -29,7 +29,7 @@ export default function Ticket() {
             西門紅樓
           </Text>
           <Box mb="60px">
-            <Image loading="eager" src={logoImg} alt="" width="800" height="405" layout="responsive" />
+            <Image loading="eager" src={logoImg} alt="" width="600" height="304" layout="responsive" />
           </Box>
 
           <Text fontSize="40px" textAlign="center" color="#d43e23" mb="60px">

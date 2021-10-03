@@ -75,8 +75,15 @@ export default function Masthead() {
 
   return (
     <Styled.Container ref={ref}>
-      <Styled.Video initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={bgVariants} src="/video.mp4" autoPlay={true} loop muted />
-      {/* <Styled.Bg initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={bgVariants} /> */}
+      <Styled.Video
+        initial="initial"
+        animate={entry?.isIntersecting ? "inView" : "initial"}
+        variants={bgVariants}
+        src="/video.mp4"
+        autoPlay={true}
+        loop
+        muted
+      />
       <Styled.Wrapper>
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={text1Variants}>
           <Text color="#FFFFFF" fontSize="20px" textAlign="center" mb="24px">
@@ -87,7 +94,7 @@ export default function Masthead() {
           <Image loading="eager" src={logoImg} alt="" width="880" height="420" layout="responsive" />
         </MotionBox>
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={text3Variants}>
-          <Text color="#FFFFFF" fontSize="32px" textAlign="center" mt="24px" fontWeight="700">
+          <Text color="#FFFFFF" fontSize={[0, "16px", "32px"]} textAlign="center" mt="24px" fontWeight="700">
             眾團聯手．全新劇本設計．神秘嘉賓
           </Text>
         </MotionBox>

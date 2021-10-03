@@ -496,7 +496,7 @@ export default function Master() {
         <ReadMore />
       </Styled.BehindScene>
       <Box bg="#FFFFFF" py="64px">
-        <Text color="#000000" fontSize="48px" textAlign="center" as="p" mb="64px">
+        <Text color="#000000" fontSize={[0, "32px", "48px"]} textAlign="center" as="p" mb="64px">
           獨家課程．全新設計
         </Text>
         <Flex maxWidth="1200px" margin="0 auto 36px auto" flexWrap="wrap">
@@ -516,7 +516,7 @@ export default function Master() {
               />
               <Text
                 color="#FFFFFF"
-                fontSize={[0, "32px", "24px", "32px"]}
+                fontSize={[0, "24px", "24px", "32px"]}
                 position="absolute"
                 top="8px"
                 left="8px"
@@ -551,7 +551,7 @@ export default function Master() {
               />
               <Text
                 color="#FFFFFF"
-                fontSize={[0, "32px", "24px", "32px"]}
+                fontSize={[0, "24px", "24px", "32px"]}
                 position="absolute"
                 top="8px"
                 left="8px"
@@ -586,7 +586,7 @@ export default function Master() {
               />
               <Text
                 color="#FFFFFF"
-                fontSize={[0, "32px", "24px", "32px"]}
+                fontSize={[0, "24px", "24px", "32px"]}
                 position="absolute"
                 top="8px"
                 left="8px"

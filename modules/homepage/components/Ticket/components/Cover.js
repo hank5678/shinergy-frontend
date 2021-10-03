@@ -164,7 +164,7 @@ const bgVariants = {
 }
 
 export default function Cover() {
-  const { ref, entry } = useInView({ threshold: 0.1, triggerOnce: false })
+  const { ref, entry } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
     <Box ref={ref} position="relative">

@@ -9,6 +9,8 @@ import Input from "components/Input"
 import Select from "components/Select"
 import TextArea from "components/TextArea"
 import axios from "axios"
+import Modal from "components/Modal"
+import Button from "components/Button"
 
 export default function Contact() {
   const {
@@ -27,10 +29,12 @@ export default function Contact() {
         data,
       }).then((res) => {
         setLoading(false)
+        setSuccessModalVisible(true)
         reset()
       })
     }
   }
+  const [successModalVisible, setSuccessModalVisible] = useState(false)
 
   return (
     <>
@@ -78,8 +82,10 @@ export default function Contact() {
             id="teamwork"
             {...register("teamwork", { required: { value: true, message: "請選擇" } })}
           >
-            <Styled.Option value=""></Styled.Option>
             <Styled.Option value="媒體採訪">媒體採訪</Styled.Option>
+            <Styled.Option value="商業合作">商業合作</Styled.Option>
+            <Styled.Option value="活動詢價">活動詢價</Styled.Option>
+            <Styled.Option value="其他">其他</Styled.Option>
           </Select>
           <TextArea
             label="其他您想與我們說的話"
@@ -92,6 +98,32 @@ export default function Contact() {
         </Styled.Form>
       </Box>
       <Footer simplify />
+      <Modal
+        visible={successModalVisible}
+        onClose={() => {
+          setSuccessModalVisible(false)
+        }}
+        fullHeight={false}
+        width={600}
+      >
+        <Text fontSize="46px" fontWeight="700" textAlign="center" mb="24px">
+          已收到您的訊息
+        </Text>
+        <Text fontSize="22px" textAlign="center" lineHeight="1.6em" mb="24px">
+          我們將儘快回覆您的詢問，
+          <br />
+          敬請於近期內確認貴司的Email信箱，
+          <br />
+          謝謝！
+        </Text>
+        <Button
+          onClick={() => {
+            setSuccessModalVisible(false)
+          }}
+        >
+          返回
+        </Button>
+      </Modal>
     </>
   )
 }

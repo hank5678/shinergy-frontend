@@ -167,7 +167,7 @@ export default function Cover() {
   const { ref, entry } = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
-    <Box ref={ref} position="relative">
+    <Box ref={ref} position="relative" overflow="hidden">
       <Image loading="eager" src={bg} alt="" width="2222" height="1144" layout="responsive" />
       <Box position="absolute" top="0%" left="0" width="100%">
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={bgVariants}>

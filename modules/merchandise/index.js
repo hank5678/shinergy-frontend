@@ -143,8 +143,8 @@ export default function Merchandise({ data }) {
         fullHeight={true}
         width={1000}
       >
-        <Flex>
-          <Box width={1 / 2} padding="0 48px">
+        <Flex flexWrap="wrap">
+          <Box width={[0, 1, 1, 1 / 2]} padding={[0, "0 16px", "0 48px"]} mb={[0, "32px", 0]}>
             <Slider {...settings} ref={sliderRef}>
               {modalData.images.map((el, id) => (
                 <div key={id}>
@@ -171,14 +171,14 @@ export default function Merchandise({ data }) {
               </Flex>
             )}
           </Box>
-          <Box width={1 / 2}>
-            <Text fontSize="36px" fontWeight="700" mb="24px">
+          <Box width={[0, 1, 1, 1 / 2]}>
+            <Text fontSize={[0, "24px", "24px", "36px"]} fontWeight="700" mb="24px">
               {modalData.name}
             </Text>
-            <Text fontSize="18px" mb="48px" lineHeight="1.6em" whiteSpace="pre-line">
+            <Text fontSize={[0, "14px", "14px", "18px"]} mb="48px" lineHeight="1.6em" whiteSpace="pre-line">
               {modalData.description}
             </Text>
-            <Text fontSize="36px" fontWeight="700" mb="28px">
+            <Text fontSize={[0, "24px", "24px", "36px"]} fontWeight="700" mb="28px">
               訂購資訊
             </Text>
             <form onSubmit={handleSubmit(onSubmit)}>

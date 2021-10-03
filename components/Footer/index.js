@@ -29,13 +29,13 @@ export default function Footer({ simplify }) {
             <Text fontSize="17px" fontWeight="700" mb="24px">
               場地夥伴：西門紅樓
             </Text>
-            <Flex alignItems="center">
-              <Box mr="24px">
+            <Flex alignItems="center" flexWrap="wrap">
+              <Box mr="24px" mb="16px" width={1}>
                 <Text fontSize="17px" fontWeight="700">
                   本計畫獲文化內容策進院支持
                 </Text>
               </Box>
-              <Box>
+              <Box width={1}>
                 <Image loading="eager" src={logoImg} alt="" width="300" height="32" />
               </Box>
             </Flex>

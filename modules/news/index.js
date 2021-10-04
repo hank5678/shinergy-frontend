@@ -6,7 +6,7 @@ import Text from "components/Text"
 import Image from "next/image"
 import * as Styled from "./styled"
 import kvImg from "./images/kv.png"
-import photoImg from "./images/photo.png"
+import photoImg from "./images/photo.jpg"
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io"
 import logo1Img from "./images/logo1.svg"
 import logo2Img from "./images/logo2.svg"
@@ -41,16 +41,32 @@ export default function News() {
   return (
     <>
       <Header />
-      <Box pt="64px" mb="100px">
+      <Box mb="100px">
         <Styled.Video src="/news.mp4" autoPlay={true} loop muted />
-        <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)">
-          <Text fontSize="80px" fontWeight="700" textAlign="center" color="#FFFFFF" textShadow="0px 3px 6px #000000" mb="46px" mt="200px">
+        <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" width="100%">
+          <Text
+            fontSize={[0, "36px", "80px"]}
+            fontWeight="700"
+            textAlign="center"
+            color="#FFFFFF"
+            textShadow="0px 3px 6px #000000"
+            mb={[0, "20px", "46px"]}
+            mt={[0, "120px", "200px"]}
+          >
             新勝景掌中劇
           </Text>
-          <Text fontSize="40px" fontWeight="700" textAlign="center" color="#FFFFFF" textShadow="0px 3px 6px #000000" mb="80px">
+          <Text fontSize={[0, "20px", "40px"]} fontWeight="700" textAlign="center" color="#FFFFFF" textShadow="0px 3px 6px #000000" mb={[0, "140px", "80px"]}>
             全台首創光雕布袋戲
           </Text>
-          <Text fontSize="24px" fontWeight="400" textAlign="center" color="#FFFFFF" textShadow="0px 3px 6px #000000" mb="110px" lineHeight="1.5em">
+          <Text
+            fontSize={[0, "16px", "24px"]}
+            fontWeight="400"
+            textAlign="center"
+            color="#FFFFFF"
+            textShadow="0px 3px 6px #000000"
+            mb={[0, "40px", "110px"]}
+            lineHeight="1.5em"
+          >
             讓你擁有截然不同
             <br />
             全新的感動
@@ -62,53 +78,55 @@ export default function News() {
         </Box>
       </Box>
       <Box width="100%" maxWidth="1100px" margin="0 auto 100px auto">
-        <Text fontSize="46px" color="#FFFFFF" mb="40px">
+        <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="40px" textAlign={["center", "center", "left"]}>
           本期展出
         </Text>
-        <Flex>
-          <Box flex="1" mr="28px">
+        <Flex flexWrap="wrap">
+          <Box width={[1, 1, 1 / 2]} pr={[0, 0, "14px"]} mb={[0, "20px", 0]}>
             <Image loading="eager" src={kvImg} alt="" layout="responsive" />
           </Box>
-          <Box flex="1">
-            <Text fontSize="24px" color="#FFFFFF" mb="16px">
+          <Box width={[1, 1, 1 / 2]} pl={[0, 0, "14px"]}>
+            <Text fontSize={[0, "16px", "24px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" mb="16px">
               2021/12/31 - 2022/01/02
             </Text>
-            <Text fontSize="48px" color="#FFFFFF" fontWeight="700" mb="24px">
+            <Text fontSize={[0, "28px", "48px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" fontWeight="700" mb="24px">
               伏魔英雄帖再現白光劍
             </Text>
-            <Text fontSize="20px" color="#FFFFFF" fontWeight="300" lineHeight="1.8em" mb="60px">
+            <Text fontSize={[0, "14px", "20px"]} px={[0, "16px", 0]} color="#FFFFFF" fontWeight="300" lineHeight="1.8em" mb={[0, "30px", "60px"]}>
               我們首次推出的光雕布袋戲定目劇，集結北中南各家劇團演出精華，如傳統劍俠戲、廟口金光戲、電視木偶劇等特色，搭配全新光雕舞台設計及中英字幕，使國內外民眾方便理解劇情。
               <br />
               <br />
               這次更結合「太日樂集 」現場擊樂，會帶給觀眾震撼的感官體驗，除了表演外，還有每日限定偶藝相關體驗課程，期望帶給都市裡的民眾一場布袋戲文化之旅!
             </Text>
-            <Box display="inline-block" padding="20px" bg="#FFFFFF">
-              <Flex alignItems="center">
-                <Box mr="40px">
-                  <Text fontSize="24px" display="inline">
-                    11月6日開放售票
-                  </Text>
-                </Box>
-                <Box>
-                  <IoIosArrowForward color="#000000" fontSize="24px" />
-                </Box>
-              </Flex>
+            <Box textAlign={["center", "center", "left"]}>
+              <Box display="inline-block" padding={[0, "10px", "20px"]} bg="#FFFFFF">
+                <Flex alignItems="center">
+                  <Box mr={[0, "20px", "40px"]}>
+                    <Text fontSize={[0, "16px", "24px"]} display="inline">
+                      11月6日開放售票
+                    </Text>
+                  </Box>
+                  <Box>
+                    <IoIosArrowForward color="#000000" fontSize="24px" />
+                  </Box>
+                </Flex>
+              </Box>
             </Box>
           </Box>
         </Flex>
       </Box>
 
       <Styled.Record>
-        <Text fontSize="46px" color="#FFFFFF" mb="64px" textAlign="center">
+        <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="64px" textAlign="center">
           過往活動記錄
         </Text>
         <Box as="ul" width="100%" maxWidth="650px" margin="0 auto">
           {recordData.map((el, id) => (
             <Box as="li" key={id} mb="16px">
-              <Text as="span" color="#FFFFFF" fontSize="20px" mr="36px">
+              <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} mr={[0, "16px", "36px"]}>
                 {el.year}
               </Text>
-              <Text as="span" color="#FFFFFF" fontSize="20px" fontWeight="300">
+              <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} fontWeight="300" lineHeight="1.5em">
                 {el.text}
               </Text>
             </Box>
@@ -116,13 +134,31 @@ export default function News() {
         </Box>
       </Styled.Record>
 
-      <Box padding="46px" textAlign="center">
-        <Flex alignItems="center" justifyContent="center">
-          <Text color="#FFFFFF" fontSize="46px" as="span" mr="16px">
-            活動邀約
-          </Text>
-          <Box bg="#FFFFFF" borderRadius="100px" display="inline-block" padding="24px" fontWeight="700" fontSize="32px">
-            shinergypuppet@gmail.com
+      <Box padding="46px 0" textAlign="center">
+        <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
+          <Box width={[0, 1, "auto"]} mb={[0, "33px", 0]}>
+            <Text
+              color="#FFFFFF"
+              textAlign={["center", "center", "left"]}
+              width={[0, "100%", "auto"]}
+              fontSize={[0, "36px", "46px"]}
+              as="span"
+              mr={[0, 0, "16px"]}
+            >
+              活動邀約
+            </Text>
+          </Box>
+          <Box width={[0, 1, "auto"]} px={[0, "16px", 0]}>
+            <Box
+              display={["block", "block", "inline-block"]}
+              bg="#FFFFFF"
+              borderRadius="100px"
+              padding={[0, "12px", "24px"]}
+              fontWeight="700"
+              fontSize={[0, "16px", "32px"]}
+            >
+              shinergypuppet@gmail.com
+            </Box>
           </Box>
         </Flex>
       </Box>
@@ -131,32 +167,32 @@ export default function News() {
       </Box>
 
       <Box mb="60px">
-        <Text color="#FFFFFF" fontSize="46px" textAlign="center" mb="40px">
+        <Text color="#FFFFFF" fontSize={[0, "36px", "46px"]} textAlign="center" mb="40px">
           我們的合作伙伴
         </Text>
-        <Flex flexWrap="wrap" width="100%" maxWidth="1000px" margin="0 auto">
-          <Box width={1 / 5}>
+        <Flex flexWrap="wrap" width="100%" maxWidth="1000px" margin="0 auto" px="16px">
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo1Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo2Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo3Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo4Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo5Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo6Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo7Img} alt="" layout="responsive" />
           </Box>
-          <Box width={1 / 5}>
+          <Box width={[1, 1 / 2, 1 / 5]}>
             <Image loading="eager" src={logo8Img} alt="" layout="responsive" />
           </Box>
         </Flex>

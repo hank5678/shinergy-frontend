@@ -14,7 +14,8 @@ const moving = keyframes`
 export const Video = styled.video`
   object-fit: cover;
   width: 100%;
-  height: calc(100vh - 64px);
+  /* height: calc(100vh - 64px); */
+  height: 100vh;
 `
 export const ArrowWrapper = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bg from "./images/bg.png"
+import bg from "./images/bottombg.png"
 
 export const Wrapper = styled.div`
   background-image: url(${bg.src});

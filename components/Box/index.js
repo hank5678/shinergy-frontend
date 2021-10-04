@@ -12,6 +12,9 @@ const MyBox = styled(Box)`
     cursor: {
       property: "cursor",
     },
+    transform: {
+      property: "transform",
+    },
   })}
 `
 

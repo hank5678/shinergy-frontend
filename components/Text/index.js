@@ -13,8 +13,11 @@ const Text = styled.p(
   shadow,
   system({
     whiteSpace: {
-      property: "whiteSpace"
-    }
+      property: "whiteSpace",
+    },
+    transform: {
+      property: "transform",
+    },
   })
 )
 

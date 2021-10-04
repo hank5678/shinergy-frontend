@@ -39,7 +39,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <Box mt="64px" mb="64px" px="16px">
+      <Box mt="150px" mb="64px" px="16px">
         <Text fontSize={[0, "24px", "46px"]} color="#FFFFFF" textAlign="center" mb="24px">
           聯絡我們
         </Text>

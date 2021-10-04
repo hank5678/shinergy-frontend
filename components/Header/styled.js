@@ -94,13 +94,13 @@ export const Menu = styled.ul`
     background-color: transparent;
     justify-content: space-between;
     flex-direction: row;
-    max-width: 320px;
+    /* max-width: 320px; */
     display: flex;
-    /* max-width: 470px; */
+    max-width: 470px;
     margin: 0 24px;
   }
   @media ${({ theme }) => theme.device.lg} {
-    max-width: 320px;
+    max-width: 700px;
     margin: 0 36px;
   }
 `

@@ -110,7 +110,7 @@ export default function Merchandise({ data }) {
   return (
     <>
       <Header />
-      <Box pt="64px" mb="32px">
+      <Box pt="150px" mb="32px">
         <Text fontSize="46px" color="#FFFFFF" textAlign="center" mb="32px">
           限量周邊商品
         </Text>

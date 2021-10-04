@@ -20,21 +20,15 @@ export default function Header() {
           <Styled.MenuItem>
             <Link href="/merchandise">週邊商品</Link>
           </Styled.MenuItem>
-          {/* <Styled.MenuItem>
-            <a href="#" target="_blank" rel="noreferrer">
-              最新消息
-            </a>
-          </Styled.MenuItem> */}
-          {/* <Styled.MenuItem>
-            <a href="#" target="_blank" rel="noreferrer">
-              過往演出
-            </a>
-          </Styled.MenuItem> */}
-          {/* <Styled.MenuItem>
-            <a href="#" target="_blank" rel="noreferrer">
-              關於新勝景
-            </a>
-          </Styled.MenuItem> */}
+          <Styled.MenuItem>
+            <Link href="/news">最新消息</Link>
+          </Styled.MenuItem>
+          <Styled.MenuItem>
+            <Link href="/history">過往演出</Link>
+          </Styled.MenuItem>
+          <Styled.MenuItem>
+            <Link href="/about">關於新勝景</Link>
+          </Styled.MenuItem>
           <Styled.MenuItem>
             <Link href="/contact">聯絡我們</Link>
           </Styled.MenuItem>

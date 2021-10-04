@@ -495,7 +495,7 @@ export default function Master() {
         </Flex>
         <ReadMore />
       </Styled.BehindScene>
-      <Box bg="#FFFFFF" py="64px">
+      <Box bg="#FFFFFF" pt="64px" pb={[0, 0, "64px"]}>
         <Text color="#000000" fontSize={[0, "32px", "48px"]} textAlign="center" as="p" mb="64px">
           獨家課程．全新設計
         </Text>

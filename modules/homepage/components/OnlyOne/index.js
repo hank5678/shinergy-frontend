@@ -73,7 +73,7 @@ export default function OnlyOne() {
         animate={entry?.isIntersecting && "inView"}
       >
         <Styled.Slogan>
-          今年唯一一場
+          2021跨年表演場
           <br />
           全新劇本
           <br />

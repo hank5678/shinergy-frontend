@@ -87,7 +87,7 @@ export default function Masthead() {
       <Styled.Wrapper>
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={text1Variants}>
           <Text color="#FFFFFF" fontSize="20px" textAlign="center" mb="24px">
-            一年一度．限定展出
+            一年一度‧光雕投影布袋戲‧限定展出
           </Text>
         </MotionBox>
         <MotionBox initial="initial" animate={entry?.isIntersecting ? "inView" : "initial"} variants={text2Variants}>

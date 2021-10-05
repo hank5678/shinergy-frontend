@@ -8,8 +8,8 @@ import Footer from "components/Footer"
 
 import coverImg from "./images/cover.png"
 import coverMobileImg from "./images/cover-mobile.png"
-import firstCapitalImg from "./images/first-capital.png"
-import dramaImg from "./images/drama.png"
+import firstCapitalImg from "./images/first-capital.jpg"
+import dramaImg from "./images/drama.jpg"
 import capitalImg from "./images/capital.png"
 import bottomImg from "./images/bottom.png"
 import bottomMobileImg from "./images/bottom-mobile.png"
@@ -42,10 +42,10 @@ export default function About() {
           <Box order={[0, 3, 0]} width={[0, 1, "536px"]} mb={[0, "60px", "33px"]}>
             <Image loading="eager" src={firstCapitalImg} alt="" layout="responsive" />
           </Box>
-          <Box order={[0, 5, 0]} width={[0, "222px", "444px"]} textAlign="right" alignSelf="flex-end">
+          <Box order={[0, 5, 0]} width={[0, "222px", "444px"]} textAlign="right" zIndex="-1" alignSelf="flex-end">
             <Image loading="eager" src={dramaImg} alt="" layout="responsive" />
           </Box>
-          <Box order={[0, 6, 0]} width={[0, "283px", "352px"]} mt="-33px" mb={[0, "40px", 0]} zIndex="-1" position="relative">
+          <Box order={[0, 6, 0]} width={[0, "283px", "352px"]} mt="-33px" mb={[0, "40px", 0]} position="relative">
             <Image loading="eager" src={capitalImg} alt="" layout="responsive" />
           </Box>
           <Box order={[0, 1, 0]} width={[0, 1, "416px"]} ml={[0, 0, "76px"]} mb={[0, "50px", "80px"]} px={[0, "36px", 0]}>
@@ -62,7 +62,7 @@ export default function About() {
               </Box>
               <Box flex="1" mt="40px">
                 <Text fontSize="20px" color="#FFFFFF" lineHeight="1.6em" mb="16px">
-                  我們經營這個藝術的工作來說，我們也真心希望咱去重視台灣的文化，歌仔戲也好，布仔戲也好，我們所要求的也僅此而已。
+                  我們經營這個藝術工作來說，真心希望大家去重視台灣的文化，歌仔戲也好，布袋戲也好，我們所要求的僅此而已。
                 </Text>
                 <Text fontSize="16px" color="#FFFFFF" textAlign="right" fontWeight="300">
                   - 第一代團主 朱清貴先生

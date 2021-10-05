@@ -45,7 +45,7 @@ export default function About() {
           <Box order={[0, 5, 0]} width={[0, "222px", "444px"]} textAlign="right" zIndex="-1" alignSelf="flex-end">
             <Image loading="eager" src={dramaImg} alt="" layout="responsive" />
           </Box>
-          <Box order={[0, 6, 0]} width={[0, "283px", "352px"]} mt="-33px" mb={[0, "40px", 0]} position="relative">
+          <Box order={[0, 6, 0]} width={[0, "283px", "352px"]} mt="-33px" mb={[0, "40px", 0]} position="relative" bottom="-35px">
             <Image loading="eager" src={capitalImg} alt="" layout="responsive" />
           </Box>
           <Box order={[0, 1, 0]} width={[0, 1, "416px"]} ml={[0, 0, "76px"]} mb={[0, "50px", "80px"]} px={[0, "36px", 0]}>

@@ -6,7 +6,7 @@ export const Container = styled.section`
   box-sizing: border-box;
   background-color: #ffffff;
   /* padding-top: 64px; */
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 `
 
 export const Title = styled.p`

@@ -1,21 +1,33 @@
 import React from "react"
 import * as Styled from "./styled"
 import Image from "next/image"
-import coverImg from "./images/cover.jpg"
+// import coverImg from "./images/cover.jpg"
 import Box from "components/Box"
 import Text from "components/Text"
 import { Flex } from "@rebass/grid"
-import pattern01 from "./images/pattern01.png"
-import pattern02 from "./images/pattern02.png"
-import pattern03 from "./images/pattern03.png"
-import pattern04 from "./images/pattern04.png"
+// import pattern01 from "./images/pattern01.png"
+// import pattern02 from "./images/pattern02.png"
+// import pattern03 from "./images/pattern03.png"
+// import pattern04 from "./images/pattern04.png"
 import manImg from "./images/man.png"
 import womanImg from "./images/woman.png"
 import logoImg from "./images/logo.png"
 import { IoIosArrowForward } from "react-icons/io"
 import Cover from "./components/Cover"
-
 import Frame from "components/Frame"
+import showListImg from "./images/showlist.png"
+import seatImg from "./images/seat.png"
+import ticketsImg from "./images/tickets.png"
+
+import showListMobileImg1 from "./images/showlist1-m.png"
+import showListMobileImg2 from "./images/showlist2-m.png"
+import showListMobileImg3 from "./images/showlist3-m.png"
+
+import ticketsMobileImg1 from "./images/tickets1-m.png"
+import ticketsMobileImg2 from "./images/tickets2-m.png"
+import ticketsMobileImg3 from "./images/tickets3-m.png"
+import ticketsMobileImg4 from "./images/tickets4-m.png"
+import ticketsMobileImg5 from "./images/tickets5-m.png"
 
 export default function Ticket() {
   return (
@@ -23,7 +35,7 @@ export default function Ticket() {
       {/* <Image loading="eager" src={coverImg} alt="" width="2732" height="1408" layout="responsive" /> */}
       <Cover />
       {/* <Frame></Frame> */}
-      <Box maxWidth="1200px" margin="32px auto 64px auto" padding="0 27px">
+      <Box maxWidth="1200px" margin="32px auto 180px auto" mb={["64px", "64px", "64px", "110px", "180px"]} padding="0 27px">
         <Frame height={[0, "128%", "90%", "45%", "45%"]}>
           <Flex alignItems="center" height="100%">
             <Box width="100%">
@@ -40,22 +52,30 @@ export default function Ticket() {
               <Text fontSize={[0, "20px", "40px", "40px", "40px"]} textAlign="center" color="#d43e23" mb={[0, "30px", "30px", "30px", "20px"]}>
                 每日限定兩場
               </Text>
-              <Box width="100%" textAlign="center">
-                <Text
+              {/* <Box width="100%" textAlign="center" as="a" href="https://www.opentix.life/event/1448953241868992514" target="_blank"> */}
+                {/* <Text
                   as="span"
-                  href="https://www.opentix.life/event/1448953241868992514"
-                  target="_blank"
                   fontSize={[0, "12px", "26px", "26px", "26px"]}
                   textAlign="center"
                   color="#FF0058"
                 >
                   立即搶票
-                </Text>
+                </Text> */}
                 {/*<Styled.MainButton>
               <Box ml="56px" as="span">
                 <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
               </Box>
             </Styled.MainButton>*/}
+              {/* </Box> */}
+              <Box textAlign="center">
+                <Box as="a" href="https://www.opentix.life/event/1448953241868992514" target="_blank" display="inline-block" bg="#FF0058" px="16px" py="14px">
+                  <Box display="flex" alignItems="center">
+                    <Text fontSize="26px" color="#FFFFFF">
+                      立即搶票
+                    </Text>
+                    <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
+                  </Box>
+                </Box>
               </Box>
             </Box>
           </Flex>
@@ -77,6 +97,67 @@ export default function Ticket() {
             <Image loading="eager" src={manImg} alt="" width="400" height="545" layout="responsive" />
           </Box>
         </Frame>
+      </Box>
+      <Box bg="#5D0B14" px="16px" py="44px">
+        <Text color="#FFFFFF" fontSize="44px" textAlign="center" mb="44px" fontWeight="700">表演節目表</Text>
+        <Box margin="0 auto" maxWidth="979px" mb="84px" display={["none", "none", "block"]}>
+          <Image loading="eager" src={showListImg} alt="" width="979" height="707" layout="responsive" />
+        </Box>
+        <Box margin="0 auto" maxWidth="314px" mb="84px" display={["block", "block", "none"]}>
+          <Box mb="24px">
+            <Image  loading="eager" src={showListMobileImg1} alt="" width="314" height="707" layout="responsive" />
+          </Box>
+          <Box mb="24px">
+            <Image  loading="eager" src={showListMobileImg2} alt="" width="314" height="707" layout="responsive" />
+          </Box>
+          <Box mb="24px">
+            <Image  loading="eager" src={showListMobileImg3} alt="" width="314" height="707" layout="responsive" />
+          </Box>
+        </Box>
+
+
+        <Text color="#FFFFFF" fontSize="44px" textAlign="center" mb="44px" fontWeight="700">節目座位表</Text>
+        <Box margin="0 auto" maxWidth="980px" mb="84px">
+          <Image  loading="eager" src={seatImg} alt="" width="980" height="757" layout="responsive" />
+        </Box>
+
+        
+
+
+
+        <Text color="#FFFFFF" fontSize="44px" textAlign="center" mb="44px" fontWeight="700">票價資訊</Text>
+        <Box margin="0 auto" maxWidth="980px" mb="39px" display={["none", "none", "block"]}>
+          <Image loading="eager" src={ticketsImg} alt="" width="980" height="400" layout="responsive" />
+        </Box>
+
+        <Box margin="0 auto" maxWidth="200px" mb="39px" display={["block", "block", "none"]}>
+          <Box mb="24px">
+            <Image  loading="eager" src={ticketsMobileImg1} alt="" width="394" height="784" layout="responsive" />
+          </Box>
+          <Box mb="24px">
+            <Image  loading="eager" src={ticketsMobileImg2} alt="" width="402" height="568" layout="responsive" />
+          </Box>
+          <Box mb="24px">
+            <Image  loading="eager" src={ticketsMobileImg3} alt="" width="402" height="566" layout="responsive" />
+          </Box>
+          <Box mb="24px">
+            <Image  loading="eager" src={ticketsMobileImg4} alt="" width="400" height="562" layout="responsive" />
+          </Box>
+          <Box mb="24px">
+            <Image  loading="eager" src={ticketsMobileImg5} alt="" width="398" height="704" layout="responsive" />
+          </Box>
+        </Box>
+
+        <Box textAlign="center">
+          <Box as="a" href="https://www.opentix.life/event/1448953241868992514" target="_blank" display="inline-block" bg="#FFCE00" px="30px" py="14px">
+            <Box display="flex" alignItems="center">
+              <Text fontSize="26px" color="#000000">
+                立即購票
+              </Text>
+              <IoIosArrowForward fontSize="24px" color="#000000" />
+            </Box>
+          </Box>
+        </Box>
       </Box>
       {/* <Box pt="64px" pb="64px" bg="#dcbedb">
         <Styled.Title>早鳥與套票優惠方案</Styled.Title>

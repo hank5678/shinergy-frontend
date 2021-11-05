@@ -102,8 +102,8 @@ export default function News() {
               <Box display="inline-block" padding={[0, "10px", "20px"]} bg="#FFFFFF">
                 <Flex alignItems="center">
                   <Box mr={[0, "20px", "40px"]}>
-                    <Text fontSize={[0, "16px", "24px"]} display="inline">
-                      11月6日開放售票
+                    <Text fontSize={[0, "16px", "24px"]} display="inline" href="https://www.opentix.life/event/1448953241868992514" target="_blank">
+                      立即搶票
                     </Text>
                   </Box>
                   <Box>

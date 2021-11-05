@@ -113,12 +113,9 @@ export default function Masthead() {
         </Styled.ArrowWrapper>
       </Styled.Wrapper>
       <Box as="a" display={["none", "none", "block"]} href="#" target="_blank" position="absolute" bottom="100px" right="0px" bg="#FF0058" px="9px" py="14px">
-        <Text fontSize="18px" color="#FFFFFF" mb="8px">
-          COMING SOON
-        </Text>
         <Box display="flex" alignItems="center">
-          <Text fontSize="26px" color="#FFFFFF">
-            11月6日開放售票
+          <Text fontSize="26px" color="#FFFFFF" href="https://www.opentix.life/event/1448953241868992514" target="_blank">
+            立即搶票
           </Text>
           <IoIosArrowForward fontSize="24px" color="#FFFFFF" />
         </Box>

@@ -51,8 +51,14 @@ export default function Header() {
           <Styled.YoutubeIcon />
         </a>
 
-        <Styled.SquareBtn bg="#FFCE00" fontSize="20px" display={["flex", "none", "flex"]}>
-          11月6日伏魔英雄帖開放售票
+        <Styled.SquareBtn
+          href="https://www.opentix.life/event/1448953241868992514"
+          target="_new"
+          bg="#FFCE00"
+          fontSize="20px"
+          display={["flex", "none", "flex"]}
+        >
+          立即搶票
         </Styled.SquareBtn>
         {/* <Styled.SquareBtn className="lang" bg="#FFFFFF" fontSize="16px" href="http://www.google.com.tw" target="_blank" rel="noreferrer">
           EN

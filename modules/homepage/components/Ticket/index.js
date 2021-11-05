@@ -41,8 +41,15 @@ export default function Ticket() {
                 每日限定兩場
               </Text>
               <Box width="100%" textAlign="center">
-                <Text as="span" fontSize={[0, "12px", "26px", "26px", "26px"]} textAlign="center" color="#FF0058">
-                  11月6日即將開放售票
+                <Text
+                  as="span"
+                  href="https://www.opentix.life/event/1448953241868992514"
+                  target="_blank"
+                  fontSize={[0, "12px", "26px", "26px", "26px"]}
+                  textAlign="center"
+                  color="#FF0058"
+                >
+                  立即搶票
                 </Text>
                 {/*<Styled.MainButton>
               <Box ml="56px" as="span">

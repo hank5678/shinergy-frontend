@@ -2,11 +2,8 @@ import styled from "styled-components"
 import frameImg from "./images/frame.svg"
 
 export const Container = styled.section`
-  /* background-color: #dcbedb; */
   box-sizing: border-box;
   background-color: #ffffff;
-  /* padding-top: 64px; */
-  /* padding-bottom: 120px; */
 `
 
 export const Title = styled.p`

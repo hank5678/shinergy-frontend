@@ -1,3 +1,3 @@
-import page from "modules/homepage"
+import page from "modules/news"
 
 export default page

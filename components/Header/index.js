@@ -15,13 +15,13 @@ export default function Header() {
         </Styled.Logo>
         <Styled.Menu visible={menuVisible}>
           <Styled.MenuItem>
-            <Link href="/">伏魔英雄帖</Link>
+            <Link href="/">首頁</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
             <Link href="/merchandise">週邊商品</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
-            <Link href="/news">最新消息</Link>
+            <Link href="/hero">伏魔英雄帖</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
             <Link href="/history">過往演出</Link>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useMemo } from "react"
 import Header from "components/Header"
 import Flex from "components/Flex"
 import Box from "components/Box"
@@ -17,32 +17,22 @@ import logo6Img from "./images/logo6.svg"
 import logo7Img from "./images/logo7.svg"
 import logo8Img from "./images/logo8.svg"
 import Footer from "components/Footer"
+import dayjs from "dayjs"
 
-const recordData = [
-  { year: "2018", text: "台北白晝之夜 演出" },
-  { year: "2018", text: "血肉果汁機跨年演唱會 中場演出" },
-  { year: "2019", text: "台灣文化博覽會 受邀演出" },
-  { year: "2019", text: "台中葫蘆墩文化中心 演出" },
-  { year: "2019", text: "屏東藝術館 演出" },
-  { year: "2019", text: "「美國臺灣傳統週暨加拿大亞裔傳統月美加西團」北美巡迴演出" },
-  { year: "2019", text: "富邦人壽TICC業務表揚大會 受邀演出" },
-  { year: "2019", text: "外交部國情授權影片" },
-  { year: "2019", text: "文化科技論壇" },
-  { year: "2019", text: "桃園科技藝術節 演出" },
-  { year: "2019", text: "文化策進院揭牌授權影片" },
-  { year: "2020", text: "澎湖元宵乞龜演出" },
-  { year: "2020", text: "國泰人壽TICC業務表揚大會 受邀演出" },
-  { year: "2020", text: "台北燈節演出 (台北市政府觀傳局)" },
-  { year: "2020", text: "新北三峽 客家文化園區 演出" },
-  { year: "2020", text: "台北白晝之夜 演出" },
-]
+export default function News({ data, news }) {
+  const videoURL = useMemo(() => {
+    return data.video.url || ""
+  }, [data])
 
-export default function News() {
+  const record = useMemo(() => {
+    return data.record || []
+  }, [data])
+
   return (
     <>
       <Header />
       <Box mb="100px">
-        <Styled.Video src="/news.mp4" autoPlay={true} loop muted />
+        <Styled.Video src={videoURL} autoPlay={true} loop muted />
         <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" width="100%">
           <Text
             fontSize={[0, "36px", "80px"]}
@@ -79,31 +69,36 @@ export default function News() {
       </Box>
       <Box width="100%" maxWidth="1100px" margin="0 auto 100px auto">
         <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="40px" textAlign={["center", "center", "left"]}>
-          本期展出
+          {news.title}
         </Text>
         <Flex flexWrap="wrap">
           <Box width={[1, 1, 1 / 2]} pr={[0, 0, "14px"]} mb={[0, "20px", 0]}>
-            <Image loading="eager" src={kvImg} alt="" layout="responsive" />
+            <Image loading="eager" src={news.image.url} alt="" width={news.image.width} height={news.image.height} layout="responsive" />
           </Box>
           <Box width={[1, 1, 1 / 2]} pl={[0, 0, "14px"]}>
             <Text fontSize={[0, "16px", "24px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" mb="16px">
-              2021/12/31 - 2022/01/02
+              {dayjs(news.startDate).format("YYYY/MM/DD")} - {dayjs(news.endDate).format("YYYY/MM/DD")}
             </Text>
             <Text fontSize={[0, "28px", "48px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" fontWeight="700" mb="24px">
-              伏魔英雄帖再現白光劍
+              {news.caption}
             </Text>
-            <Text fontSize={[0, "14px", "20px"]} px={[0, "16px", 0]} color="#FFFFFF" fontWeight="300" lineHeight="1.8em" mb={[0, "30px", "60px"]}>
-              我們首次推出的光雕布袋戲定目劇，集結北中南各家劇團演出精華，如傳統劍俠戲、廟口金光戲、電視木偶劇等特色，搭配全新光雕舞台設計及中英字幕，使國內外民眾方便理解劇情。
-              <br />
-              <br />
-              這次更結合「太日樂集 」現場擊樂，會帶給觀眾震撼的感官體驗，除了表演外，還有每日限定偶藝相關體驗課程，期望帶給都市裡的民眾一場布袋戲文化之旅!
+            <Text
+              fontSize={[0, "14px", "20px"]}
+              px={[0, "16px", 0]}
+              color="#FFFFFF"
+              fontWeight="300"
+              lineHeight="1.8em"
+              mb={[0, "30px", "60px"]}
+              whiteSpace="pre-wrap"
+            >
+              {news.content}
             </Text>
-            <Box textAlign={["center", "center", "left"]}>
+            <Box textAlign={["center", "center", "left"]} as="a" href={news.btnLink} target="_blank">
               <Box display="inline-block" padding={[0, "10px", "20px"]} bg="#FFFFFF">
                 <Flex alignItems="center">
                   <Box mr={[0, "20px", "40px"]}>
-                    <Text fontSize={[0, "16px", "24px"]} display="inline" href="https://www.opentix.life/event/1448953241868992514" target="_blank">
-                      立即搶票
+                    <Text fontSize={[0, "16px", "24px"]} display="inline">
+                      {news.btnText}
                     </Text>
                   </Box>
                   <Box>
@@ -121,7 +116,7 @@ export default function News() {
           過往活動記錄
         </Text>
         <Box as="ul" width="100%" maxWidth="650px" margin="0 auto">
-          {recordData.map((el, id) => (
+          {record.map((el, id) => (
             <Box as="li" key={id} mb="16px">
               <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} mr={[0, "16px", "36px"]}>
                 {el.year}

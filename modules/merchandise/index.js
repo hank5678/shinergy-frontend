@@ -55,7 +55,7 @@ const Commodity = ({ name, oldPrize, newPrize, url, images, onClick }) => (
   </Box>
 )
 
-export default function Merchandise({ data }) {
+export default function Merchandise({ data = [] }) {
   const [visible, setVisible] = useState(false)
   const [successModalVisible, setSuccessModalVisible] = useState(false)
   const [loading, setLoading] = useState(false)

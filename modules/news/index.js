@@ -21,18 +21,18 @@ import dayjs from "dayjs"
 
 export default function News({ data, news }) {
   const videoURL = useMemo(() => {
-    return data.video.url || ""
+    return data?.video.url ? data?.video.url : ""
   }, [data])
 
   const record = useMemo(() => {
-    return data.record || []
+    return data?.record ? data?.record : []
   }, [data])
 
   return (
     <>
       <Header />
       <Box mb="100px">
-        <Styled.Video src={videoURL} autoPlay={true} loop muted />
+        <Styled.Video src="/news.mp4" autoPlay={true} loop muted />
         <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" width="100%">
           <Text
             fontSize={[0, "36px", "80px"]}
@@ -67,67 +67,72 @@ export default function News({ data, news }) {
           </Styled.ArrowWrapper>
         </Box>
       </Box>
-      <Box width="100%" maxWidth="1100px" margin="0 auto 100px auto">
-        <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="40px" textAlign={["center", "center", "left"]}>
-          {news.title}
-        </Text>
-        <Flex flexWrap="wrap">
-          <Box width={[1, 1, 1 / 2]} pr={[0, 0, "14px"]} mb={[0, "20px", 0]}>
-            <Image loading="eager" src={news.image.url} alt="" width={news.image.width} height={news.image.height} layout="responsive" />
-          </Box>
-          <Box width={[1, 1, 1 / 2]} pl={[0, 0, "14px"]}>
-            <Text fontSize={[0, "16px", "24px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" mb="16px">
-              {dayjs(news.startDate).format("YYYY/MM/DD")} - {dayjs(news.endDate).format("YYYY/MM/DD")}
-            </Text>
-            <Text fontSize={[0, "28px", "48px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" fontWeight="700" mb="24px">
-              {news.caption}
-            </Text>
-            <Text
-              fontSize={[0, "14px", "20px"]}
-              px={[0, "16px", 0]}
-              color="#FFFFFF"
-              fontWeight="300"
-              lineHeight="1.8em"
-              mb={[0, "30px", "60px"]}
-              whiteSpace="pre-wrap"
-            >
-              {news.content}
-            </Text>
-            <Box textAlign={["center", "center", "left"]} as="a" href={news.btnLink} target="_blank">
-              <Box display="inline-block" padding={[0, "10px", "20px"]} bg="#FFFFFF">
-                <Flex alignItems="center">
-                  <Box mr={[0, "20px", "40px"]}>
-                    <Text fontSize={[0, "16px", "24px"]} display="inline">
-                      {news.btnText}
-                    </Text>
-                  </Box>
-                  <Box>
-                    <IoIosArrowForward color="#000000" fontSize="24px" />
-                  </Box>
-                </Flex>
+
+      {news && (
+        <Box width="100%" maxWidth="1100px" margin="0 auto 100px auto">
+          <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="40px" textAlign={["center", "center", "left"]}>
+            {news.title}
+          </Text>
+          <Flex flexWrap="wrap">
+            <Box width={[1, 1, 1 / 2]} pr={[0, 0, "14px"]} mb={[0, "20px", 0]}>
+              <Image loading="eager" src={news.image.url} alt="" width={news.image.width} height={news.image.height} layout="responsive" />
+            </Box>
+            <Box width={[1, 1, 1 / 2]} pl={[0, 0, "14px"]}>
+              <Text fontSize={[0, "16px", "24px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" mb="16px">
+                {dayjs(news.startDate).format("YYYY/MM/DD")} - {dayjs(news.endDate).format("YYYY/MM/DD")}
+              </Text>
+              <Text fontSize={[0, "28px", "48px"]} textAlign={["center", "center", "left"]} color="#FFFFFF" fontWeight="700" mb="24px">
+                {news.caption}
+              </Text>
+              <Text
+                fontSize={[0, "14px", "20px"]}
+                px={[0, "16px", 0]}
+                color="#FFFFFF"
+                fontWeight="300"
+                lineHeight="1.8em"
+                mb={[0, "30px", "60px"]}
+                whiteSpace="pre-wrap"
+              >
+                {news.content}
+              </Text>
+              <Box textAlign={["center", "center", "left"]} as="a" href={news.btnLink} target="_blank">
+                <Box display="inline-block" padding={[0, "10px", "20px"]} bg="#FFFFFF">
+                  <Flex alignItems="center">
+                    <Box mr={[0, "20px", "40px"]}>
+                      <Text fontSize={[0, "16px", "24px"]} display="inline">
+                        {news.btnText}
+                      </Text>
+                    </Box>
+                    <Box>
+                      <IoIosArrowForward color="#000000" fontSize="24px" />
+                    </Box>
+                  </Flex>
+                </Box>
               </Box>
             </Box>
-          </Box>
-        </Flex>
-      </Box>
-
-      <Styled.Record>
-        <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="64px" textAlign="center">
-          過往活動記錄
-        </Text>
-        <Box as="ul" width="100%" maxWidth="650px" margin="0 auto">
-          {record.map((el, id) => (
-            <Box as="li" key={id} mb="16px">
-              <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} mr={[0, "16px", "36px"]}>
-                {el.year}
-              </Text>
-              <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} fontWeight="300" lineHeight="1.5em">
-                {el.text}
-              </Text>
-            </Box>
-          ))}
+          </Flex>
         </Box>
-      </Styled.Record>
+      )}
+
+      {record.length > 0 && (
+        <Styled.Record>
+          <Text fontSize={[0, "36px", "46px"]} color="#FFFFFF" mb="64px" textAlign="center">
+            過往活動記錄
+          </Text>
+          <Box as="ul" width="100%" maxWidth="650px" margin="0 auto">
+            {record.map((el, id) => (
+              <Box as="li" key={id} mb="16px">
+                <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} mr={[0, "16px", "36px"]}>
+                  {el.year}
+                </Text>
+                <Text as="span" color="#FFFFFF" fontSize={[0, "14px", "20px"]} fontWeight="300" lineHeight="1.5em">
+                  {el.text}
+                </Text>
+              </Box>
+            ))}
+          </Box>
+        </Styled.Record>
+      )}
 
       <Box padding="46px 0" textAlign="center">
         <Flex alignItems="center" justifyContent="center" flexWrap="wrap">

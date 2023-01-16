@@ -3,19 +3,25 @@ import axios from "axios"
 export default page
 
 export async function getServerSideProps(context) {
-  const res = await axios({ method: "get", url: "https://shinergy.herokuapp.com/homepage" })
-  const newsRes = await axios({ method: "get", url: "https://shinergy.herokuapp.com/homepage-news" })
+  try {
+    const res = await axios({ method: "get", url: "https://shinergy.herokuapp.com/homepage" })
+    const newsRes = await axios({ method: "get", url: "https://shinergy.herokuapp.com/homepage-news" })
 
-  const { data } = res
-  const { data: news } = newsRes
+    const { data } = res
+    const { data: news } = newsRes
 
-  if (!data || !news) {
-    return {
-      notFound: true,
+    if (!data || !news) {
+      return {
+        notFound: true,
+      }
     }
-  }
 
-  return {
-    props: { data, news },
+    return {
+      props: { data, news },
+    }
+  } catch (err) {
+    return {
+      props: {},
+    }
   }
 }

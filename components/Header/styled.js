@@ -100,7 +100,7 @@ export const Menu = styled.ul`
     margin: 0 24px;
   }
   @media ${({ theme }) => theme.device.lg} {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 36px;
   }
 `

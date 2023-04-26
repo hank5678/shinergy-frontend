@@ -17,9 +17,9 @@ export default function Header() {
           <Styled.MenuItem>
             <Link href="/">首頁</Link>
           </Styled.MenuItem>
-          <Styled.MenuItem>
+          {/* <Styled.MenuItem>
             <Link href="/merchandise">週邊商品</Link>
-          </Styled.MenuItem>
+          </Styled.MenuItem> */}
           <Styled.MenuItem>
             <Link href="/legend-of-demon-hunter">伏魔英雄帖</Link>
           </Styled.MenuItem>

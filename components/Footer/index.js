@@ -24,10 +24,16 @@ export default function Footer({ simplify }) {
               身障人士及陪同者(1位)購票享8折優惠，入場時須出示證件，身障人士與陪同者須同時入場。輪椅席為提供輪椅之觀眾購買，請Email至本劇團購買。
             </Text>
             <Text fontSize="17px" fontWeight="700" mb="24px">
-              主辦單位：新勝景掌中劇團
+              演出單位／策畫者：新勝景掌中劇團
             </Text>
             <Text fontSize="17px" fontWeight="700" mb="24px">
-              場地夥伴：西門紅樓
+              主辦單位：國立傳統藝術中心、新勝景掌中劇團
+            </Text>
+            <Text fontSize="17px" fontWeight="700" mb="24px">
+              承辦單位：新勝景掌中劇團
+            </Text>
+            <Text fontSize="17px" fontWeight="700" mb="24px">
+              指導單位：文化部、文化內容策進院
             </Text>
             <Flex alignItems="center" flexWrap="wrap">
               <Box mr="24px" mb="16px" width={1}>

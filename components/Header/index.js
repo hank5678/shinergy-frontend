@@ -52,7 +52,7 @@ export default function Header() {
         </a>
 
         <Styled.SquareBtn
-          href="https://www.opentix.life/event/1448953241868992514"
+          href="https://www.opentix.life/event/1624961893525516290"
           target="_new"
           bg="#FFCE00"
           fontSize="20px"

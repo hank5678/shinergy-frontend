@@ -112,7 +112,18 @@ export default function Masthead() {
           <IoIosArrowDown color="#FFFFFF" fontSize="24px" />
         </Styled.ArrowWrapper>
       </Styled.Wrapper>
-      <Box as="a" href="https://www.opentix.life/event/1448953241868992514" target="_blank" display={["none", "none", "block"]} position="absolute" bottom="100px" right="0px" bg="#FF0058" px="9px" py="14px">
+      <Box
+        as="a"
+        href="https://www.opentix.life/event/1624961893525516290"
+        target="_blank"
+        display={["none", "none", "block"]}
+        position="absolute"
+        bottom="100px"
+        right="0px"
+        bg="#FF0058"
+        px="9px"
+        py="14px"
+      >
         <Box display="flex" alignItems="center">
           <Text fontSize="26px" color="#FFFFFF">
             立即搶票
